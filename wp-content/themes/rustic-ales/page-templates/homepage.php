@@ -86,7 +86,7 @@
 				      ?>
 				     <?php wp_reset_query(); ?> 
 				</div>
-				<div id="view-all-beers-row" >
+				<div id="view-all-beers-row" class="view-all-row">
 				<a class="drawn-underline view-more-link" href="#">View all beers ></a>
 				</div>
 			</div>
@@ -95,8 +95,98 @@
 </div>
 
 <div id="homepage-photos" class="page-yellow-paper-bg y-paddings no-padding-top">
+	<div class="container">
 	<div class="sub-title-row">
 		<h2 class="sub-title dark">Photos/Instagram</h2>
+	</div>
+	<div class="row" id="homepage-photos-loop">
+		
+			<?php
+			$post_object_1 = get_field('photos_section_image_1');
+			if( $post_object_1 ): 
+				// override $post
+				$post = $post_object_1;
+				setup_postdata( $post ); 
+				?>
+			    <div class="col-md-4 home-gallery-item">
+			    	 <?php $image = get_field('gallery_item_image');
+			        if( !empty($image) ): ?>
+			            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+			        <?php endif; ?>
+			    </div>
+			    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+			<?php endif; ?>
+
+			<?php
+			$post_object_2 = get_field('photos_section_image_2');
+			if( $post_object_2 ): 
+				// override $post
+				$post = $post_object_2;
+				setup_postdata( $post ); 
+				?>
+			    <div class="col-md-4 home-gallery-item">
+			    	 <?php $image = get_field('gallery_item_image');
+			        if( !empty($image) ): ?>
+			            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+			        <?php endif; ?>
+			    </div>
+			    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+			<?php endif; ?>
+
+			<?php
+			$post_object_3 = get_field('photos_section_image_3');
+			if( $post_object_3 ): 
+				// override $post
+				$post = $post_object_3;
+				setup_postdata( $post ); 
+				?>
+			    <div class="col-md-4 home-gallery-item">
+			    	 <?php $image = get_field('gallery_item_image');
+			        if( !empty($image) ): ?>
+			            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+			        <?php endif; ?>
+			    </div>
+			    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+			<?php endif; ?>
+
+			<div class="cleaner"></div>
+
+			<?php
+			$post_object_4 = get_field('photos_section_image_4');
+			if( $post_object_4 ): 
+				// override $post
+				$post = $post_object_4;
+				setup_postdata( $post ); 
+				?>
+			    <div class="col-md-5 home-gallery-item">
+			    	 <?php $image = get_field('gallery_item_image');
+			        if( !empty($image) ): ?>
+			            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+			        <?php endif; ?>
+			    </div>
+			    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+			<?php endif; ?>
+
+			<?php
+			$post_object_5 = get_field('photos_section_image_5');
+			if( $post_object_5 ): 
+				// override $post
+				$post = $post_object_5;
+				setup_postdata( $post ); 
+				?>
+			    <div class="col-md-7 home-gallery-item">
+			    	 <?php $image = get_field('gallery_item_image');
+			        if( !empty($image) ): ?>
+			            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+			        <?php endif; ?>
+			    </div>
+			    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+			<?php endif; ?>
+		
+	</div>
+			<div id="view-all-photos-row" class="view-all-row">
+				<a class="drawn-underline view-more-link" href="#">View more ></a>
+			</div>
 	</div>
 </div>   
 

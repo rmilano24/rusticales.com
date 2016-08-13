@@ -88,6 +88,9 @@ img {
 	font-size: 18px;
 	letter-spacing:1px;
 }
+.view-all-row {
+	text-align:right;
+}
 
 /* Header */
 #main-header-bg {
@@ -250,16 +253,23 @@ img {
 	max-width:75%;
 	max-height:50%;
 }
-#homepage-beers #view-all-beers-row {
-	text-align:right;
-}
+
 #homepage-beers #view-all-beers-row a {
 	color: #372929;
 }
 
 #homepage-photos .sub-title-row  {
 	position:relative;
-	top:-30px;
+	top:-15px;
+}
+#homepage-photos #homepage-photos-loop {
+	margin-left:-6px;
+	margin-right:-6px;
+}
+#homepage-photos #homepage-photos-loop .home-gallery-item {
+	padding-left:6px;
+	padding-right:6px;
+	margin-bottom:12px;
 }
 @media screen and (min-width:1630px) {
 	.large-container {
