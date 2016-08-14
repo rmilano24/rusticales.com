@@ -12,7 +12,7 @@
  */
 
 	get_header(); ?>
-
+	<div class="container y-paddings">
       <div class="row">
 
         <div class="col-md-12 blog-main">
@@ -22,5 +22,5 @@
         </div><!-- /.blog-main -->
 
       </div><!-- /.row -->
-      
+     </div> 
 	<?php get_footer(); ?>
