@@ -36,9 +36,21 @@
 	   */
 	  wp_footer(); 
 	?>
+  <script src="<?php echo get_template_directory_uri (); ?>/js/jquery.hoverdir.js"></script>
 	<script src="<?php echo get_template_directory_uri (); ?>/js/snap.svg-min.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/modernizr.custom.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/classie.js"></script>
 		<script src="<?php echo get_template_directory_uri (); ?>/js/genie.js"></script>
+
+    <script type="text/javascript">
+      jQuery(function($) {
+      
+        $(' .beer-item ').each( function() { $(this).hoverdir(); } );
+        $('.hamburger').click(function(){
+          $(this).toggleClass('is-active');
+        });
+
+      });
+    </script>
   </body>
 </html>

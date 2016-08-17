@@ -35,7 +35,8 @@
   <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri (); ?>/css/genie.css" />
     
-  <link href="<?php echo get_template_directory_uri (); ?>/css/hover.min.css" rel="stylesheet">
+  <link href="<?php echo get_template_directory_uri (); ?>/css/hover.css" rel="stylesheet">
+   <link href="<?php echo get_template_directory_uri (); ?>/css/hamburgers.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri (); ?>/css/custom.css" rel="stylesheet">
   </head>
   <body <?php body_class(); ?>>
@@ -44,14 +45,14 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1440 806" preserveAspectRatio="none">
         <path class="overlay-path" d="m 701.56545,809.01175 35.16718,0 0,19.68384 -35.16718,0 z"/>
       </svg>
-      <button type="button" class="overlay-close">Close</button>
+      <!--<button type="button" class="overlay-close">Close</button>-->
       <nav>
        <?php wp_nav_menu( array( 'theme_location' => 'main_menu' ) ); ?>
       </nav>
     </div>
 
   <header id="main-header">
-    <div id="main-header-bg" style="background:url('<?php the_field("top_banner_image") ?>') no-repeat center center; background-size:cover">
+    <div id="main-header-bg" style="background:url('<?php the_field("top_banner_image") ?>') no-repeat center top; background-size:cover">
     </div>
     <div id="mobile-header">
       <div class="container">
@@ -62,7 +63,11 @@
           </a>
         </div>
         <div class="col-md-6" id="favicon-container">
-          <img id="trigger-overlay" src="/images/icons/favicon.png" alt="Favicon">
+          <button class="hamburger hamburger--stand" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>  
         </div>
         <div class="cleaner"></div>
         </div>
