@@ -1,7 +1,7 @@
 (function() {
 	var triggerBttn = document.querySelector( '.hamburger' ),
 		overlay = document.querySelector( 'div.overlay' ),
-		closeBttn = document.querySelector( '.hamburger.is-active' );
+		closeBttn = document.querySelector( '.hamburger' );
 		transEndEventNames = {
 			'WebkitTransition': 'webkitTransitionEnd',
 			'MozTransition': 'transitionend',

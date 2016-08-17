@@ -264,12 +264,12 @@ button.hamburger {
 	margin-top:15px;
 }
 
-#homepage-beers .beer-item {
+.beer-item {
 	padding:0 10px;
 	margin-bottom:20px;
 	overflow:hidden;
 }
-#homepage-beers .beer-item a {
+.beer-item a {
 	background-color:#FCFCFC;
 	height:162px;
 	max-height:162px;
@@ -278,8 +278,7 @@ button.hamburger {
     overflow:hidden;
 }
 
-
-#homepage-beers .beer-item a span.display-cell {
+.beer-item a span.display-cell {
 	vertical-align:middle;
 	text-align:center;
 	height:162px;
@@ -287,14 +286,14 @@ button.hamburger {
 	position:relative;
 }
 
-#homepage-beers .beer-item div.overlay {
+.beer-item div.overlay {
 	position: absolute;
 	background: #FFECBA;
 	width: 100%;
 	height: 100%;
 	top:-200px;
 }
-#homepage-beers .beer-item img {
+.beer-item img {
 	max-width:75%;
 	max-height:50%;
 	position:relative;

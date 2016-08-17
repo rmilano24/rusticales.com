@@ -64,15 +64,27 @@
 	if( $my_query->have_posts() ) {
 	while( $my_query->have_posts() ) {
 	$my_query->the_post();?>
-	<div class="one-fifth-column">
-
+	<?php $image = get_field('beer_logo');
+	if( !empty($image) ): ?>
+	<div class="one-fifth-column beer-item">
+		<a class="display-table" href="<?php the_permalink(); ?>">
+			<span class="display-cell">
+			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+		<div class="overlay"></div>
+		</span>
+		</a>
 	</div>
+	<?php endif; ?>
 	<?php
 		}
 		}
 		}
 		$post = $orig_post;
 		wp_reset_query(); ?>
+		<div class="cleaner"></div>
+		<div id="view-all-beers-row" class="view-all-row">
+				<a class="drawn-underline view-more-link" href="#">View all beers ></a>
+		</div>
     	</div>
     </div>
     <?php

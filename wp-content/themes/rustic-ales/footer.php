@@ -41,16 +41,35 @@
   	<script src="<?php echo get_template_directory_uri (); ?>/js/modernizr.custom.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/classie.js"></script>
 		<script src="<?php echo get_template_directory_uri (); ?>/js/genie.js"></script>
-
+    <script src="<?php echo get_template_directory_uri (); ?>/js/jquery.cookie.js"></script>
     <script type="text/javascript">
       jQuery(function($) {
       
         $(' .beer-item ').each( function() { $(this).hoverdir(); } );
+
         $('.hamburger').click(function(){
           $(this).toggleClass('is-active');
         });
 
+     
+        var verificationPage = "http://localhost:8888/age-verification/";
+        var cookieValue = $.cookie('noShowWelcome');
+        var cookieValueType = jQuery.type(cookieValue)
+        if (window.location.href != verificationPage) {
+          if (cookieValue != 'true') {
+               window.location.replace(verificationPage);
+          }
+        }
+
+        $('#close-verification').click(function(){
+          $.cookie('noShowWelcome', 'true', { path: '/' });
+          window.location.replace('/');   
+        });
+
       });
+  
+
+  
     </script>
   </body>
 </html>
