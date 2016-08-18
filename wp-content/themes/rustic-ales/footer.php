@@ -27,7 +27,13 @@
       	</div>
       </div>
     </footer>
-
+    <div id="age-verification">
+      <div class="container y-paddings">
+      <h1>Are you over 21 years of age?</h1>
+      <a href="#" id="close-verification">Yes</a>
+      <a href="https://www.google.com/search?q=legos&hl=en&biw=1291&bih=1316&site=webhp&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi59ff6zMnOAhXCGR4KHePZDQcQ_AUIBygC">No</a>
+      </div>
+      </div>
     <?php 
 	  /*
 	   * Always have wp_footer() just before the closing </body>
@@ -44,26 +50,29 @@
     <script src="<?php echo get_template_directory_uri (); ?>/js/jquery.cookie.js"></script>
     <script type="text/javascript">
       jQuery(function($) {
-      
+        
+        // Directional Hover Effects
         $(' .beer-item ').each( function() { $(this).hoverdir(); } );
 
+        // Animated hamburger menu - toggle class
         $('.hamburger').click(function(){
           $(this).toggleClass('is-active');
         });
 
-     
+        // Age Verification Redirect
         var verificationPage = "http://localhost:8888/age-verification/";
         var cookieValue = $.cookie('noShowWelcome');
-        var cookieValueType = jQuery.type(cookieValue)
+        var beforeRedirect = window.location.href;
         if (window.location.href != verificationPage) {
-          if (cookieValue != 'true') {
-               window.location.replace(verificationPage);
+          if (cookieValue) {
+            $('#age-verification').hide();
           }
         }
 
+        // Age Verification Set Cookie when "Yes" button is clicked and redirect to homepage
         $('#close-verification').click(function(){
           $.cookie('noShowWelcome', 'true', { path: '/' });
-          window.location.replace('/');   
+          $('#age-verification').hide();
         });
 
       });

@@ -194,6 +194,60 @@ button.hamburger {
 #main-footer .footer-social-group li + li {
 	margin-left:18px;
 }
+
+/* Age Verification */
+#age-verification {
+	position:fixed;
+	width:100%;
+	height:100%;
+	display:table;
+	z-index:999999999;
+	background:#000;
+	top:0;
+	left:0;
+	text-align:center;
+}
+#age-verification .container {
+	display:table-cell;
+	width:100%;
+	height:100%;
+}
+
+/* Beer Loop Items */
+.beer-item {
+	padding:0 10px;
+	margin-bottom:20px;
+	overflow:hidden;
+}
+.beer-item a {
+	background-color:#FCFCFC;
+	height:162px;
+	max-height:162px;
+	-webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+    overflow:hidden;
+}
+.beer-item a span.display-cell {
+	vertical-align:middle;
+	text-align:center;
+	height:162px;
+	max-height:162px;
+	position:relative;
+}
+.beer-item div.overlay {
+	position: absolute;
+	background: #FFECBA;
+	width: 100%;
+	height: 162px;
+	top:-300px;
+}
+.beer-item img {
+	max-width:75%;
+	max-height:50%;
+	position:relative;
+	z-index:9;
+}
+
 /* Homepage */
 #homepage-locations {
 	margin-top:-15px;
@@ -262,42 +316,6 @@ button.hamburger {
 #homepage-beers .beers-content {
 	text-align:center;
 	margin-top:15px;
-}
-
-.beer-item {
-	padding:0 10px;
-	margin-bottom:20px;
-	overflow:hidden;
-}
-.beer-item a {
-	background-color:#FCFCFC;
-	height:162px;
-	max-height:162px;
-	-webkit-transition: all 1s; /* Safari */
-    transition: all 1s;
-    overflow:hidden;
-}
-
-.beer-item a span.display-cell {
-	vertical-align:middle;
-	text-align:center;
-	height:162px;
-	max-height:162px;
-	position:relative;
-}
-
-.beer-item div.overlay {
-	position: absolute;
-	background: #FFECBA;
-	width: 100%;
-	height: 100%;
-	top:-200px;
-}
-.beer-item img {
-	max-width:75%;
-	max-height:50%;
-	position:relative;
-	z-index:9;
 }
 
 #homepage-beers #view-all-beers-row a {
