@@ -73,7 +73,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="page-top-banner-wrapper">
       <div id="header-logo-menu">
         <div id="logo-container">
           <a href="/">

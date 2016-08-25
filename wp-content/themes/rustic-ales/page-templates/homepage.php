@@ -88,7 +88,7 @@
 				     <?php wp_reset_query(); ?> 
 				</div>
 				<div id="view-all-beers-row" class="view-all-row">
-				<a class="drawn-underline view-more-link" href="#">View all beers ></a>
+				<a class="drawn-underline view-more-link" href="<?php echo get_page_link(12); ?>">View all beers ></a>
 				</div>
 			</div>
 		</div>

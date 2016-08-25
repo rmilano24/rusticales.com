@@ -75,6 +75,32 @@
           $('#age-verification').hide();
         });
 
+        
+        $('#the_beer_filters li a').click(function(){
+          // Add class .active on beer filter items when clicked and remove class from all others.
+          $('#the_beer_filters li').removeClass('active');
+          $(this).parent('li').addClass('active');
+
+          // Hide all beer categories not related to this filter item and only show the one(s) that is/are.
+
+            //Get ID of filter item to match that of category
+            var filter_id = $(this).attr('id').replace('beer-cat-filter-','');
+            if(filter_id == 'all') {
+              $('.beer-category-group').show();
+              $('.beer-category-group .sub-title-wrapper').show();
+            } else {
+            $('.beer-category-group').each(function(){
+              $('.beer-category-group .sub-title-wrapper').hide();
+              if($(this).attr('id') == 'beer-cat-'+filter_id ) {
+                $(this).show();
+              } else {
+                $(this).hide();
+              }
+
+            });
+          }
+        });
+
       });
   
 
