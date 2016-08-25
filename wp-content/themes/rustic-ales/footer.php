@@ -28,10 +28,13 @@
       </div>
     </footer>
     <div id="age-verification">
-      <div class="container y-paddings">
-      <h1>Are you over 21 years of age?</h1>
+      <div class="container">
+      <div id="age-verification-logo">
+      <img src="/images/sara-logo-lrg.png" alt="Sante Adairius Rustic Ales Logo" >
+      </div>
+      <h2>Are you over 21?</h2>
       <a href="#" id="close-verification">Yes</a>
-      <a href="https://www.google.com/search?q=legos&hl=en&biw=1291&bih=1316&site=webhp&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi59ff6zMnOAhXCGR4KHePZDQcQ_AUIBygC">No</a>
+      <a id="underage" href="https://www.google.com/search?q=legos&hl=en&biw=1291&bih=1316&site=webhp&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi59ff6zMnOAhXCGR4KHePZDQcQ_AUIBygC">No, get me away from here.</a>
       </div>
       </div>
     <?php 
@@ -42,11 +45,11 @@
 	   */
 	  wp_footer(); 
 	?>
-  <script src="<?php echo get_template_directory_uri (); ?>/js/jquery.hoverdir.js"></script>
-	<script src="<?php echo get_template_directory_uri (); ?>/js/snap.svg-min.js"></script>
+    <script src="<?php echo get_template_directory_uri (); ?>/js/jquery.hoverdir.js"></script>
+  	<script src="<?php echo get_template_directory_uri (); ?>/js/snap.svg-min.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/modernizr.custom.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/classie.js"></script>
-		<script src="<?php echo get_template_directory_uri (); ?>/js/genie.js"></script>
+  	<script src="<?php echo get_template_directory_uri (); ?>/js/genie.js"></script>
     <script src="<?php echo get_template_directory_uri (); ?>/js/jquery.cookie.js"></script>
     <script type="text/javascript">
       jQuery(function($) {
@@ -60,14 +63,11 @@
         });
 
         // Age Verification Redirect
-        var verificationPage = "http://localhost:8888/age-verification/";
         var cookieValue = $.cookie('noShowWelcome');
-        var beforeRedirect = window.location.href;
-        if (window.location.href != verificationPage) {
-          if (cookieValue) {
-            $('#age-verification').hide();
-          }
+        if (cookieValue) {
+          $('#age-verification').hide();
         }
+
 
         // Age Verification Set Cookie when "Yes" button is clicked and redirect to homepage
         $('#close-verification').click(function(){
@@ -102,9 +102,6 @@
         });
 
       });
-  
-
-  
     </script>
   </body>
 </html>
