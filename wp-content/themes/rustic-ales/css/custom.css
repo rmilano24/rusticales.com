@@ -230,7 +230,7 @@ button.hamburger {
 }
 
 #age-verification h2 {
-	margin: 50px 0 30px;
+	margin: 60px 0 40px;
 	text-transform:uppercase;
 	font-size:60px;
 }
@@ -403,6 +403,9 @@ button.hamburger {
 }
 
 /* Beers and Labels Landing Page */
+#beer-and-labels-the-content {
+	background-color:#FFF;
+}
 #beer-and-labels-the-content .container .post-content{
 	padding:0 230px;
 }
