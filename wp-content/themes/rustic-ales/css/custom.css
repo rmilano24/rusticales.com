@@ -172,7 +172,7 @@ img {
 button.hamburger {
 	position:relative;
 	z-index:99999999999 !important;
-
+	outline:none !important;
 }
 button.hamburger:hover, button.hamburger.is-active {
 	box-shadow:none !important;
