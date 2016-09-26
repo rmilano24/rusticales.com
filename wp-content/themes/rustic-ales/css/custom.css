@@ -219,7 +219,7 @@ button.hamburger {
 
 #age-verification-logo {
 	width: 485px;
-	margin:0 auto;
+	margin:-2px auto 0;
 }
 
 #age-verification #close-verification {
