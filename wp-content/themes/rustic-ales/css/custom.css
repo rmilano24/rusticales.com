@@ -172,6 +172,27 @@ img {
 button.hamburger {
 	position:relative;
 	z-index:99999999999 !important;
+
+}
+button.hamburger:hover, button.hamburger.is-active {
+	box-shadow:none !important;
+	border:none !important;
+	background:transparent !important;
+}
+button.hamburger .hamburger-box .hamburger-inner, button.hamburger .hamburger-box .hamburger-inner:before, button.hamburger .hamburger-box .hamburger-inner:after {
+	background-color:#FFECBA !important;
+
+	border-radius:0;
+	height:2px;
+}
+button.hamburger.is-active .hamburger-box .hamburger-inner {
+	background-color:transparent !important;
+}
+.hamburger-inner::before {
+	top:-6px;
+}
+.hamburger-inner::after {
+	bottom:-6px;
 }
 /* Footer */
 #main-footer {

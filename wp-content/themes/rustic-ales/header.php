@@ -63,7 +63,7 @@
           </a>
         </div>
         <div class="col-md-6" id="favicon-container">
-          <button class="hamburger hamburger--stand" type="button">
+          <button class="hamburger hamburger--stand">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
