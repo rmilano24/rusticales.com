@@ -27,7 +27,7 @@
       	</div>
       </div>
     </footer>
-    <div id="age-verification">
+    <div id="age-verification" style="display:none;">
       <div class="container">
       <div id="age-verification-logo">
       <img src="/images/sara-logo-lrg.png" alt="Sante Adairius Rustic Ales Logo" >
@@ -51,9 +51,16 @@
   	<script src="<?php echo get_template_directory_uri (); ?>/js/classie.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/genie.js"></script>
     <script src="<?php echo get_template_directory_uri (); ?>/js/jquery.cookie.js"></script>
+    <script src="<?php echo get_template_directory_uri (); ?>/js/instafeed.min.js"></script>
     <script type="text/javascript">
       jQuery(function($) {
         
+          $('#main-nav ul li.menu-item-has-children').on('mouseenter', function () {
+          $(this).children('ul').fadeIn();  
+          }).on('mouseleave', function () {
+            $(this).children('ul').delay(200).fadeOut();
+        });
+
         // Directional Hover Effects
         $(' .beer-item ').each( function() { $(this).hoverdir(); } );
 
@@ -66,6 +73,8 @@
         var cookieValue = $.cookie('noShowWelcome');
         if (cookieValue) {
           $('#age-verification').hide();
+        } else {
+          $('#age-verification').show();
         }
 
 

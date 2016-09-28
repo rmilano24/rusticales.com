@@ -94,11 +94,17 @@
 		</div>
 	</div>
 </div>
-
-<div id="homepage-photos" class="page-yellow-paper-bg y-paddings no-padding-top">
+<div id="homepage-on-tap">
+	<div class="container">
+		<div class="sub-title-row">
+			<h2 class="sub-title dark">What's On Tap</h2>
+		</div>
+	</div>
+</div>
+<div id="homepage-photos" class="y-paddings">
 	<div class="container">
 	<div class="sub-title-row">
-		<h2 class="sub-title dark">Photos/Instagram</h2>
+		<h2 class="sub-title dark">Photo Gallery</h2>
 	</div>
 	<div class="row" id="homepage-photos-loop">
 		
