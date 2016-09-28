@@ -137,7 +137,7 @@ img {
 	line-height:90px;
 	letter-spacing:4px;
 	left:240px;
-	bottom:-50px;
+	bottom:-68px;
 }
 /* Navigation */
 #main-nav ul {
@@ -147,8 +147,8 @@ img {
 	padding:0 20px 20px;
 }
 #main-nav ul > li {
-	padding-left:26px;
-	padding-right:26px;
+	padding-left:0;
+	padding-right:0;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -169,10 +169,10 @@ img {
 	padding:5px 0; 
 	letter-spacing:1px;
 }
-#main-nav ul li.current-menu-item a {
+#main-nav ul li.current-menu-item > a {
 	background:url('../../../../images/drawn-underline.png') no-repeat center bottom;
 	padding-bottom:9px;
-	background-size:85%;
+	background-size:76px;
 }
 #main-nav ul li a:hover {
 	text-decoration:none;

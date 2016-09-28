@@ -4,7 +4,7 @@
  */
 
 	get_header(); ?>
-<div id="page-content-wrapper">
+<div id="page-content-wrapper" class="y-paddings">
 	<div id="homepage-locations" class="large-container">
 		<div class="sub-title-row">
 			<h2 class="sub-title yellow">Visit Us</h2>
@@ -95,14 +95,12 @@
 	</div>
 </div>
 <div id="homepage-on-tap">
-	<div class="row">
 	<div class="container">
 		<div class="sub-title-row">
 			<h2 class="sub-title dark">What's On Tap</h2>
 		</div>
 			<div id="instafeed">
 			</div>
-	</div>
 	</div>
 </div>
 <div id="homepage-photos" class="y-paddings">
