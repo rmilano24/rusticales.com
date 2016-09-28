@@ -18,6 +18,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	color:#372929;
 	background:url('../../../../images/page-grey-bg.jpg') repeat center center;
+	background-size:1040px auto;
 }
 .page-yellow-paper-bg {
 	background:url('../../../../images/page-yellow-bg.jpg') no-repeat center center;
