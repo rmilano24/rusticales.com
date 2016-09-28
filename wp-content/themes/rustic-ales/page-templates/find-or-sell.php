@@ -10,4 +10,7 @@
 
       </div>
       
+      <div id="store-locator">
+      <?php echo do_shortcode('[wpsl]'); ?>
+      </div>
 	<?php get_footer(); ?>

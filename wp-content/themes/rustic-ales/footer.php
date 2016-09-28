@@ -51,7 +51,9 @@
   	<script src="<?php echo get_template_directory_uri (); ?>/js/classie.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/genie.js"></script>
     <script src="<?php echo get_template_directory_uri (); ?>/js/jquery.cookie.js"></script>
+    <?php if ( is_front_page() ) { ?>
     <script src="<?php echo get_template_directory_uri (); ?>/js/instafeed.js"></script>
+    <?php } ?>
     <script type="text/javascript">
       jQuery(function($) {
         
@@ -112,6 +114,7 @@
 
       });
     </script>
+    <?php if ( is_front_page() ) { ?>
     <script type="text/javascript">
     var userFeed = new Instafeed({
         get: 'user',
@@ -124,6 +127,7 @@
     });
     userFeed.run();
 </script>
+<?php } ?>
       
   </body>
 </html>
