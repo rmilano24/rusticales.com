@@ -147,8 +147,8 @@ img {
 	padding:0 20px 20px;
 }
 #main-nav ul > li {
-	padding-left:30px;
-	padding-right:30px;
+	padding-left:26px;
+	padding-right:26px;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -168,6 +168,11 @@ img {
 	font-size:11px;
 	padding:5px 0; 
 	letter-spacing:1px;
+}
+#main-nav ul li.current-menu-item a {
+	background:url('../../../../images/drawn-underline.png') no-repeat center bottom;
+	padding-bottom:9px;
+	background-size:85%;
 }
 #main-nav ul li a:hover {
 	text-decoration:none;
