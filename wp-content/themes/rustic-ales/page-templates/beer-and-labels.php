@@ -45,6 +45,7 @@ unset($beer_cat);
 ?>
 
 <div id="beer-categories-filters">
+<h2 class="sub-title yellow">Our Beers</h2>
 		 <ul id="the_beer_filters" class="list-inline col-md-10 col-md-offset-1">
 			<?php foreach ($show_these_categories as $cat_value) { ?>
 				<li>

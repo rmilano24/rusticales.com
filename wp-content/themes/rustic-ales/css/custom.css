@@ -403,6 +403,7 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 }
 #homepage-on-tap  .sub-title-row {
 	text-align:center;
+	margin-bottom:20px;
 }
 
 #homepage-on-tap #instafeed {
@@ -411,6 +412,7 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 #homepage-on-tap #instafeed img {
 	display:block;
 	margin:0 auto;
+	width:614px;
 }
 
 #homepage-photos #homepage-photos-loop {
@@ -457,9 +459,7 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 }
 
 /* Beers and Labels Landing Page */
-#beer-and-labels-the-content {
-	background-color:#FFF;
-}
+
 #beer-and-labels-the-content .container .post-content{
 	padding:0 230px;
 }
@@ -470,6 +470,15 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 
 #the_beer_filters {
 	text-align:center;
+}
+#beer-categories-filters {
+	position:relative;
+}
+#beer-categories-filters .sub-title.yellow {
+	position:absolute;
+	top:-15px;
+	left:-5px;
+	padding-left:60px;
 }
 #the_beer_filters li {
 	margin-left:-4px;
