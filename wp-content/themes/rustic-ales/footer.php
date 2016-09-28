@@ -51,7 +51,7 @@
   	<script src="<?php echo get_template_directory_uri (); ?>/js/classie.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/genie.js"></script>
     <script src="<?php echo get_template_directory_uri (); ?>/js/jquery.cookie.js"></script>
-    <script src="<?php echo get_template_directory_uri (); ?>/js/instafeed.min.js"></script>
+    <script src="<?php echo get_template_directory_uri (); ?>/js/instafeed.js"></script>
     <script type="text/javascript">
       jQuery(function($) {
         
@@ -112,5 +112,18 @@
 
       });
     </script>
+    <script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: 1385476119,
+        accessToken: '1385476119.5cac516.de6240d874374be8bbbb8928cbbd798d',
+        target: 'instafeed',
+        limit: 1,
+        template: '<img src="{{image}}" alt="What is on tap" />',
+        resolution: 'standard_resolution'
+    });
+    userFeed.run();
+</script>
+      
   </body>
 </html>

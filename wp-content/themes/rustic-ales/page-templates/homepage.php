@@ -95,10 +95,14 @@
 	</div>
 </div>
 <div id="homepage-on-tap">
+	<div class="row">
 	<div class="container">
 		<div class="sub-title-row">
 			<h2 class="sub-title dark">What's On Tap</h2>
 		</div>
+			<div id="instafeed">
+			</div>
+	</div>
 	</div>
 </div>
 <div id="homepage-photos" class="y-paddings">
