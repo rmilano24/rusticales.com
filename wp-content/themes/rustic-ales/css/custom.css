@@ -292,8 +292,8 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 }
 /* Beer Loop Items */
 .beer-item {
-	padding:0 10px;
-	margin-bottom:20px;
+	padding:0 5px;
+	margin-bottom:10px;
 	overflow:hidden;
 }
 .beer-item:hover {
@@ -459,8 +459,13 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 #beer-single-description {
 	width:65%;
 }
+#more-beers-row {
+	background: #FFECBA url('../../../../images/large-overhead-map.jpg') no-repeat center center;
+}
 #more-beers-row .sub-title-row {
 	text-align:center;
+	position:relative;
+	top:-30px;
 }
 
 /* Beers and Labels Landing Page */
@@ -510,6 +515,16 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 #the_beer_filters li.active {
 background:url('../../../../images/active-filter-underline.png') no-repeat center bottom;
 background-size:80%;
+}
+/* Find Our Beers */
+#find-our-beer .post-content {
+	padding:0 45px;
+}
+#find-our-beer .post-content p {
+	font-size:20px;
+}
+#wpsl-result-list {
+	display:none !important;
 }
 
 @media screen and (min-width:1630px) {

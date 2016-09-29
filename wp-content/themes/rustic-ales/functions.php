@@ -1151,4 +1151,12 @@ function create_beers_taxonomy() {
 
 }
 
+add_filter( 'wpsl_admin_marker_dir', 'custom_admin_marker_dir' );
 
+function custom_admin_marker_dir() {
+
+    $admin_marker_dir = get_stylesheet_directory() . '/wpsl-markers/';
+    
+    return $admin_marker_dir;
+}
+define( 'WPSL_MARKER_URI', dirname( get_bloginfo( 'stylesheet_url') ) . '/wpsl-markers/' );

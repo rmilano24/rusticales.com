@@ -42,7 +42,7 @@
     </div>
 
     <div id="more-beers-row">
-    	<div class="container y-paddings">
+    	<div class="container y-paddings no-padding-top">
     	<div class="sub-title-row">
     	<h2 class="sub-title dark">More Beers</h2>
     	</div>
