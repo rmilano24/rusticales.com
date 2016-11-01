@@ -64,7 +64,7 @@
         });
 
         // Directional Hover Effects
-        $(' .beer-item ').each( function() { $(this).hoverdir(); } );
+       // $(' .beer-item ').each( function() { $(this).hoverdir(); } );
 
         // Animated hamburger menu - toggle class
         $('.hamburger').click(function(){

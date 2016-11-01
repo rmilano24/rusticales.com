@@ -74,9 +74,22 @@
 				           		<div class="one-fifth-column beer-item">
 					           		<a class="display-table" href="<?php the_permalink(); ?>">
 					           			<span class="display-cell">
-											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-										<!--<div class="overlay"></div>-->
-										</span>
+				           				<?php 
+				           				$showTitle = get_field('show_title_with_logo');
+		       							if( $showTitle) { ?>
+		       								<?php if (get_field('show_title_above_or_below_logo') == 'Above') { ?>
+		       									<p class="title-above-logo"><?php the_title(); ?></p>
+		       								<?php } ?>
+		       								
+		       								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+		       								<?php if (get_field('show_title_above_or_below_logo') == 'Below') { ?>
+		       									<p class="title-below-logo"><?php the_title(); ?></p>
+		       								<?php } ?>
+		       							<?php } else { ?>
+										<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+										<?php } ?>
+									<!--<div class="overlay"></div>-->
+									</span>
 					           		</a>
 				          		</div>
 				          	<?php $count++; ?>	
