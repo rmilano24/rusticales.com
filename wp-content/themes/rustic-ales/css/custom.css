@@ -130,14 +130,18 @@ img {
 }
 #banner-heading-text {
 	position:absolute;
-	float:left;
 	font-size:70px;
 	margin:0;
 	text-transform:uppercase;
 	line-height:90px;
 	letter-spacing:4px;
 	left:240px;
-	bottom:-68px;
+	bottom:-38px;
+}
+
+#banner-heading-text .child-page-header {
+	display:inline-block;
+	margin-bottom:36px;
 }
 /* Navigation */
 #main-nav ul {
@@ -155,7 +159,7 @@ img {
 }
 #main-nav ul li {
 	padding-top:10px;
-	line-height:14px;
+	line-height:20px;
 	display:block;
 }
 #main-nav ul li + li {
@@ -165,7 +169,7 @@ img {
 #main-nav ul li a {
 	color: #000;
 	text-transform:uppercase;
-	font-size:11px;
+	font-size:10px;
 	padding:5px 0; 
 	letter-spacing:1px;
 }
@@ -319,8 +323,8 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 	height:162px;
 	max-height:162px;
 	position:relative;
-	-webkit-transition: all 1s; /* Safari */
-    transition: all 1s;
+	-webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
 }
 .beer-item a span.display-cell:hover {
 	background-color: #FFECBA;

@@ -84,8 +84,14 @@
         <?php wp_nav_menu( array( 'theme_location' => 'main_menu' ) ); ?>
         </nav>
       </div>
+
+
       <?php if( get_field('banner_heading_text') ) { ?>
-      <h1 id="banner-heading-text"><?php the_field('banner_heading_text'); ?></h1>
+      <h1 id="banner-heading-text">
+        <?php if (is_page_template('page-templates/locations.php')) { ?>
+          <span class="sub-title yellow child-page-header">Get In Touch</span><br>
+        <?php } ?>
+      <?php the_field('banner_heading_text'); ?></h1>
       <?php } ?>
         <div class="cleaner"></div>
     </div>
