@@ -194,6 +194,12 @@ img {
 .overlay-genie {
 	z-index:99;
 }
+.overlay ul li a {
+	font-size:24px;
+}
+.overlay ul li .sub-menu {
+	display:none;
+}
 button.hamburger {
 	position:relative;
 	z-index:99999999999 !important;
@@ -313,14 +319,19 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 	height:162px;
 	max-height:162px;
 	position:relative;
+	-webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
 }
-.beer-item div.overlay {
+.beer-item a span.display-cell:hover {
+	background-color: #FFECBA;
+}
+/*.beer-item div.overlay {
 	position: absolute;
 	background: #FFECBA;
 	width: 100%;
 	height: 162px;
 	top:-300px;
-}
+} */
 .beer-item img {
 	max-width:75%;
 	max-height:50%;
@@ -461,6 +472,7 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 }
 #more-beers-row {
 	background: #FFECBA url('../../../../images/large-overhead-map.jpg') no-repeat center center;
+	background-size:cover;
 }
 #more-beers-row .sub-title-row {
 	text-align:center;
@@ -526,7 +538,13 @@ background-size:80%;
 #wpsl-result-list {
 	display:none !important;
 }
-
+#find-our-beer .gm-style-iw:parent {
+	background-color: #FFECBA;
+}
+#find-our-beer .wpsl-info-window span, #find-our-beer .wpsl-info-window strong {
+	font-family:'Special Elite';
+	font-weight:400;
+}
 @media screen and (min-width:1630px) {
 	.large-container {
 		width:1600px;

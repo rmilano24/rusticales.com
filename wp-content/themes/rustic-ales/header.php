@@ -35,7 +35,7 @@
   <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri (); ?>/css/genie.css" />
     
-  <link href="<?php echo get_template_directory_uri (); ?>/css/hover.css" rel="stylesheet">
+  <!--<link href="<?php echo get_template_directory_uri (); ?>/css/hover.css" rel="stylesheet"> -->
    <link href="<?php echo get_template_directory_uri (); ?>/css/hamburgers.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri (); ?>/css/custom.css" rel="stylesheet">
   </head>

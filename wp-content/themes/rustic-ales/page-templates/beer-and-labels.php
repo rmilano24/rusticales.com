@@ -98,7 +98,7 @@ unset($beer_cat);
 		           		<a class="display-table" href="<?php the_permalink(); ?>">
 		           			<span class="display-cell">
 								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-							<div class="overlay"></div>
+							<!--<div class="overlay"></div>-->
 							</span>
 		           		</a>
 	          		</div>

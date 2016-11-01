@@ -45,7 +45,7 @@
 	   */
 	  wp_footer(); 
 	?>
-    <script src="<?php echo get_template_directory_uri (); ?>/js/jquery.hoverdir.js"></script>
+    <!--<script src="<?php echo get_template_directory_uri (); ?>/js/jquery.hoverdir.js"></script>-->
   	<script src="<?php echo get_template_directory_uri (); ?>/js/snap.svg-min.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/modernizr.custom.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/classie.js"></script>
@@ -112,7 +112,13 @@
           }
         });
 
+
+
       });
+      function locationInfobox(){
+      jQuery('.wpsl-info-window').parent('div').addClass('location-infobox');
+      };
+      setTimeout(locationInfobox, 10000);
     </script>
     <?php if ( is_front_page() ) { ?>
     <script type="text/javascript">
