@@ -83,7 +83,7 @@
 		wp_reset_query(); ?>
 		<div class="cleaner"></div>
 		<div id="view-all-beers-row" class="view-all-row">
-				<a class="drawn-underline view-more-link" href="#">View all beers ></a>
+				<a class="drawn-underline view-more-link" href="beer-labels">View all beers ></a>
 		</div>
     	</div>
     </div>
