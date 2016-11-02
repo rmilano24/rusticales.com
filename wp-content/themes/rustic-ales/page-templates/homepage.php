@@ -70,7 +70,7 @@
 				            ?>
 				             <?php $image = get_field('beer_logo');
 				             $selected = get_field('include_in_homepage_beers');
-       							if( !empty($image) && in_array('Yes', $selected) ): ?>
+       							if( !empty($image) && $selected ): ?>
 				           		<div class="one-fifth-column beer-item">
 					           		<a class="display-table" href="<?php the_permalink(); ?>">
 					           			<span class="display-cell">
