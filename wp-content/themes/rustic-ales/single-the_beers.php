@@ -92,7 +92,7 @@ $custom_taxterms = wp_get_object_terms( $post->ID, 'beer_categories', array('fie
 $args = array(
 'post_type' => 'the_beers',
 'post_status' => 'publish',
-'posts_per_page' => 16, // you may edit this number
+'posts_per_page' => 16,
 'orderby' => 'rand',
 'tax_query' => array(
     array(

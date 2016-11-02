@@ -446,6 +446,9 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 }
 
 /* Beer Detail */
+.single-the_beers #main-header-bg, .single-the_beers #main-header {
+	height:400px;
+}
 #beer-details-row {
 	background-color:#FFF;
 }
