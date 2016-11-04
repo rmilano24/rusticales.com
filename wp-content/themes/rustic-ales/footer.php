@@ -112,13 +112,19 @@
           }
         });
 
+        $('#wpsl-gmap').click(function(){
+          locationInfobox();
+          //setTimeout(locationInfobox, 100);
+        });
 
 
       });
       function locationInfobox(){
-      jQuery('.wpsl-info-window').parent('div').addClass('location-infobox');
+      jQuery('.gm-style-iw').prev('div').addClass('location-infobox');
+      jQuery('.gm-style-iw').next('div').addClass('close-infobox');
       };
-      setTimeout(locationInfobox, 10000);
+
+      
     </script>
     <?php if ( is_front_page() ) { ?>
     <script type="text/javascript">
