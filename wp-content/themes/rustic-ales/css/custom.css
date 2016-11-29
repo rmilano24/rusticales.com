@@ -79,11 +79,11 @@ img {
 	box-sizing:border-box;
 }
 .drawn-underline {
-	background: url('../../../../images/drawn-underline.png') no-repeat center bottom;
-	background-size:100% auto;
 	padding-bottom:14px;
 }
 .drawn-underline:hover {
+	background: url('../../../../images/drawn-underline.png') no-repeat center bottom;
+	background-size:100% auto;
 	text-decoration:none;
 }
 .view-more-link {
