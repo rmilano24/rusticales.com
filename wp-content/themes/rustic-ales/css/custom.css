@@ -178,6 +178,12 @@ img {
 	padding-bottom:9px;
 	background-size:76px;
 }
+
+#main-nav ul li.current_page_parent > a {
+	background:url('../../../../images/drawn-underline.png') no-repeat center bottom;
+	background-size:76px;
+}
+
 #main-nav ul li a:hover {
 	text-decoration:none;
 }
