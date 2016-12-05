@@ -2,18 +2,31 @@
     <footer id="main-footer" class="y-paddings">
       <div class="container">
       	<div class="row">
-      		<div class="col-md-3" id="footer-hours">
-      			<h2 class="sub-title dark">Hours</h2>
+      		<div class="col-md-4 footer-hours">
+      			<h2 class="sub-title dark">Brewery</h2>
+            <div class="footer-hours-group">
+            <h3>Location</h3>
+            103 Kennedy Drive<br>
+            Capitola, CA 95010
+            </div>
       			<div class="footer-hours-group">
-      			<h3 class="hours-location">Brewery</h3>
+            <h3>Hours</h3>
       			<?php the_field('brewery_hours', 72); ?>
       			</div>
-      			<div class="footer-hours-group">
-      			<h3 class="hours-location">Taproom</h3>
-      			<?php the_field('taproom_hours', 72); ?>
-      			</div>
       		</div>
-      		<div class="col-md-3" id="footer-social">
+          <div class="col-md-4 footer-hours">
+            <h2 class="sub-title dark">Tasting Room</h2>
+            <div class="footer-hours-group">
+            <h3>Location</h3>
+            123 Beer Street<br>
+            Santa Cruz, CA 95060
+            </div>
+            <div class="footer-hours-group">
+            <h3>Hours</h3>
+            <?php the_field('taproom_hours', 72); ?>
+            </div>
+          </div>
+      		<div class="col-md-4" id="footer-social">
       			<h2 class="sub-title dark">Get In Touch</h2>
       			<div class="footer-social-group">
       				<ul class="list-inline">
