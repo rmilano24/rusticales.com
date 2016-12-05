@@ -424,7 +424,9 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 	text-align:center;
 	margin-top:15px;
 }
-
+#homepage-beers #view-all-beers-row {
+	margin-top:30px;
+}
 #homepage-beers #view-all-beers-row a {
 	color: #372929;
 }
@@ -441,11 +443,14 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 
 #homepage-on-tap #instafeed {
 	margin:0 auto;
+	width:684px;
+	padding:35px;
+	background:url('../../../../images/on-tap-border.png') no-repeat center center;
+	background-size:cover;
 }
 #homepage-on-tap #instafeed img {
 	display:block;
 	margin:0 auto;
-	width:614px;
 }
 
 #homepage-photos #homepage-photos-loop {
