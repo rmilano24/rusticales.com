@@ -32,15 +32,27 @@
       		</div>
       		<div class="col-md-6 right-col">
       			<?php the_field('saras_cellar_text'); ?>
+                        <div class="learn-more-right-row">
+                              <a class="drawn-underline view-more-link" href="#">Learn more ></a>
+                        </div>
       		</div>
       		<div class="cleaner"></div>
 
       	</div>
       </div>
 
-      <div id="wholesale-row">
+      <div id="wholesale-row" class="y-paddings">
       	<div class="container">
-
+                  <div class="sub-title-row">
+                        <h2 class="sub-title dark">Wholesale Orders</h2>
+                  </div>
+                  <div class="col-md-8 col-md-offset-2">
+                        <?php the_field('wholesale_row_text'); ?>
+                        <div class="learn-more-right-row">
+                              <a class="drawn-underline view-more-link" href="#">Learn more ></a>
+                        </div>
+                  </div>
+                  <div class="cleaner"></div>
       	</div>
       </div>
 </div>

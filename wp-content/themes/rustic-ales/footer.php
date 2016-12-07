@@ -58,14 +58,14 @@
 	   */
 	  wp_footer(); 
 	?>
-    <!--<script src="<?php echo get_template_directory_uri (); ?>/js/jquery.hoverdir.js"></script>-->
   	<script src="<?php echo get_template_directory_uri (); ?>/js/snap.svg-min.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/modernizr.custom.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/classie.js"></script>
   	<script src="<?php echo get_template_directory_uri (); ?>/js/genie.js"></script>
     <script src="<?php echo get_template_directory_uri (); ?>/js/jquery.cookie.js"></script>
-    <?php if ( is_front_page() ) { ?>
+    <?php if ( is_front_page() || is_page_template( 'page-templates/photo-gallery.php' )) { ?>
     <script src="<?php echo get_template_directory_uri (); ?>/js/instafeed.js"></script>
+    <script src="<?php echo get_template_directory_uri (); ?>/js/masonry.pkgd.min.js"></script>
     <?php } ?>
     <script type="text/javascript">
       jQuery(function($) {
@@ -139,18 +139,28 @@
 
       
     </script>
-    <?php if ( is_front_page() ) { ?>
+    <?php if ( is_front_page() || is_page_template( 'page-templates/photo-gallery.php' )) { ?>
     <script type="text/javascript">
     var userFeed = new Instafeed({
         get: 'user',
         userId: 1385476119,
         accessToken: '1385476119.5cac516.de6240d874374be8bbbb8928cbbd798d',
         target: 'instafeed',
-        limit: 1,
-        template: '<img src="{{image}}" alt="What is on tap" />',
-        resolution: 'standard_resolution'
+         <?php if ( is_front_page()) { ?>limit: 1,<?php } else { ?>limit: 9,<?php } ?>
+        template: <?php if ( is_front_page()) { ?>'<img src="{{image}}" alt="What is on tap" />'<?php } else { ?>'<div class="instagram-item col-md-4"><img src="{{image}}" alt="{{caption}}" /></div>'<?php } ?>,
+        resolution: 'standard_resolution',
+        after: function() {
+            jQuery('#instafeed').append('<div class="cleaner"></div>');
+        },
     });
     userFeed.run();
+
+    jQuery('#gallery-loop').masonry({
+      // options
+      itemSelector: '.gallery-item',
+      transitionDuration: '0.8s'
+    });
+
 </script>
 <?php } ?>
       

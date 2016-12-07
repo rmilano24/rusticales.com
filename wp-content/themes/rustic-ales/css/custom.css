@@ -88,6 +88,10 @@ img {
 	background-size:100% auto;
 	text-decoration:none;
 }
+.learn-more-right-row {
+	text-align:right;
+}
+
 .view-more-link {
 	font-size: 18px;
 	letter-spacing:1px;
@@ -273,6 +277,32 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 	margin-left:18px;
 }
 
+/* Gallery Items */
+#gallery-loop {
+	margin:0 -6px;
+}
+.gallery-item {
+	width:33.3333333%;
+	padding:6px;
+}
+
+/* Instagram Loop */
+#instagram-feed {
+	background:#FFECBA url('../../../../images/large-overhead-map.jpg') no-repeat center center;
+	background-size:cover;
+}
+#instagram-feed #instafeed {
+	margin-bottom:28px;
+}
+#instagram-feed .sub-title-row {
+	position:relative;
+	top:-30px;
+	text-align:center;
+}
+#instagram-feed .instagram-item:nth-child(n+4) {
+	margin-top:30px;
+}
+
 /* Age Verification */
 #age-verification {
 	position:fixed;
@@ -343,13 +373,6 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 .beer-item a span.display-cell:hover {
 	background-color: #FFECBA;
 }
-/*.beer-item div.overlay {
-	position: absolute;
-	background: #FFECBA;
-	width: 100%;
-	height: 162px;
-	top:-300px;
-} */
 .beer-item img {
 	max-width:75%;
 	max-height:50%;
@@ -358,7 +381,6 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 }
 
 /* Homepage */
-
 #homepage-locations .home-location .interior {
 	text-align:center;
 	position:relative;
@@ -569,6 +591,10 @@ background-size:80%;
 #wpsl-result-list {
 	display:none !important;
 }
+#find-our-beer #wpsl-search-wrap, #find-our-beer .wpsl-geolocation-run{
+	max-height:0 !important;
+	display:none;
+}
 #find-our-beer .gm-style-iw:parent {
 	background-color: #FFECBA;
 }
@@ -597,14 +623,25 @@ background-size:80%;
 #wpsl-wrap {
 	margin-bottom:0;
 }
+#saras-cellar-row {
+	background:url('../../../../images/large-yellow-map.jpg') no-repeat center center;
+	background-size:cover;
+	margin-top:100px;
+}
 #saras-cellar-row .sub-title-row {
 	text-align:center;
+	position:relative;
+	top:-88px;
 }
 #saras-cellar-row .left-col {
 	text-align:center;
 }
 #saras-cellar-row .left-col img {
 	width: 335px;
+}
+#wholesale-row .sub-title-row {
+	text-align:center;
+	margin-bottom:40px;
 }
 
 @media screen and (min-width:1630px) {
@@ -635,6 +672,8 @@ background-size:80%;
 	#mobile-header {
 		display:none;
 	}
+
+	
 
 	/* Homepage */
 	#homepage-locations .home-location .interior:hover img.map-image {
@@ -688,6 +727,11 @@ background-size:80%;
 	}
 	#main-header-bg {
 		top:92px;
+	}
+	
+	/* Gallery Items */
+	.gallery-item {
+		width:50%;
 	}
 
 	/* Homepage */

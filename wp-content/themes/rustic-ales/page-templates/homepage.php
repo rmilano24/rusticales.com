@@ -121,93 +121,35 @@
 	<div class="sub-title-row">
 		<h2 class="sub-title dark">Photo Gallery</h2>
 	</div>
-	<div class="row" id="homepage-photos-loop">
+	<div class="row" id="gallery-loop">
 		
-			<?php
-			$post_object_1 = get_field('photos_section_image_1');
-			if( $post_object_1 ): 
-				// override $post
-				$post = $post_object_1;
-				setup_postdata( $post ); 
-				?>
-			    <div class="col-md-4 home-gallery-item">
-			    	 <?php $image = get_field('gallery_item_image');
-			        if( !empty($image) ): ?>
-			            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-			        <?php endif; ?>
-			    </div>
-			    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-			<?php endif; ?>
-
-			<?php
-			$post_object_2 = get_field('photos_section_image_2');
-			if( $post_object_2 ): 
-				// override $post
-				$post = $post_object_2;
-				setup_postdata( $post ); 
-				?>
-			    <div class="col-md-4 home-gallery-item">
-			    	 <?php $image = get_field('gallery_item_image');
-			        if( !empty($image) ): ?>
-			            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-			        <?php endif; ?>
-			    </div>
-			    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-			<?php endif; ?>
-
-			<?php
-			$post_object_3 = get_field('photos_section_image_3');
-			if( $post_object_3 ): 
-				// override $post
-				$post = $post_object_3;
-				setup_postdata( $post ); 
-				?>
-			    <div class="col-md-4 home-gallery-item">
-			    	 <?php $image = get_field('gallery_item_image');
-			        if( !empty($image) ): ?>
-			            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-			        <?php endif; ?>
-			    </div>
-			    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-			<?php endif; ?>
-
-			<div class="cleaner"></div>
-
-			<?php
-			$post_object_4 = get_field('photos_section_image_4');
-			if( $post_object_4 ): 
-				// override $post
-				$post = $post_object_4;
-				setup_postdata( $post ); 
-				?>
-			    <div class="col-md-5 home-gallery-item">
-			    	 <?php $image = get_field('gallery_item_image');
-			        if( !empty($image) ): ?>
-			            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-			        <?php endif; ?>
-			    </div>
-			    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-			<?php endif; ?>
-
-			<?php
-			$post_object_5 = get_field('photos_section_image_5');
-			if( $post_object_5 ): 
-				// override $post
-				$post = $post_object_5;
-				setup_postdata( $post ); 
-				?>
-			    <div class="col-md-7 home-gallery-item">
-			    	 <?php $image = get_field('gallery_item_image');
-			        if( !empty($image) ): ?>
-			            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-			        <?php endif; ?>
-			    </div>
-			    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-			<?php endif; ?>
-		
+		 <?php 
+	        $args = array(
+	          'post_type' => 'photos',
+	          'posts_per_page' => 80
+	        );
+        $gallery_items = new WP_Query( $args );
+        if( $gallery_items->have_posts() ) {
+          while( $gallery_items ->have_posts() ) {
+            $gallery_items->the_post();
+            ?>
+             <div class="col-md-4 gallery-item">
+	            <?php $image = get_field('gallery_item_image');
+		        if( !empty($image) ): ?>
+		            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /> 
+		        <?php endif; ?>
+	        </div>
+            <?php
+          }
+        }
+        else {
+          echo 'There are currently no gallery images.';
+        }
+      ?>
+     <?php wp_reset_query(); ?> 
 	</div>
 			<div id="view-all-photos-row" class="view-all-row">
-				<a class="drawn-underline view-more-link" href="#">View more ></a>
+				<a class="drawn-underline view-more-link" href="/photo-gallery">View more ></a>
 			</div>
 	</div>
 </div>   
