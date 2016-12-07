@@ -15,7 +15,7 @@
 				<img class="map-image" src="/images/capitola-map.jpg" alt="Map view of Sante Adairius Brewery's Capitola Location" />
 				<a href="https://www.google.com/maps/dir/''/sante+adairius+brewery/data=!4m5!4m4!1m0!1m2!1m1!1s0x808e157784d6c595:0x641ad47ecfc90f5e?sa=X&ved=0ahUKEwis3L7-z7rOAhXFRiYKHdtlDZoQ9RcIjQEwCw" target="_blank" class="display-table">
 						<span class="display-cell">
-						<h3>Brewery</h3>
+						<h3>Brewery and Taproom</h3>
 						<h4>Capitola</h4>
 						</span>
 				</a>
@@ -27,7 +27,7 @@
 				<img class="map-image" src="/images/taproom-map.jpg" alt="Map view of Sante Adairius Brewery's Santa Cruz Taproom Location" />
 				<a href="https://www.google.com/maps/place/Water+at+Morrissey/@36.9814638,-122.0075053,15z/data=!4m2!3m1!1s0x0:0xbfa1ad9188a92d0b?sa=X&ved=0ahUKEwjKmNDU0LrOAhUCOCYKHXYqDdsQ_BIIdzAK" class="display-table" target="_blank">
 					<span class="display-cell">
-					<h3>Taproom</h3>
+					<h3>Midtown Portal</h3>
 					<h4>Santa Cruz</h4>
 					</span>
 				</a>

@@ -3,7 +3,7 @@
       <div class="container">
       	<div class="row">
       		<div class="col-md-4 footer-hours">
-      			<h2 class="sub-title dark">Brewery</h2>
+      			<h2 class="sub-title dark">Brewery and Taproom</h2>
             <div class="footer-hours-group">
             <h3>Location</h3>
             103 Kennedy Drive<br>
@@ -15,7 +15,7 @@
       			</div>
       		</div>
           <div class="col-md-4 footer-hours">
-            <h2 class="sub-title dark">Tasting Room</h2>
+            <h2 class="sub-title dark">Midtown Portal</h2>
             <div class="footer-hours-group">
             <h3>Location</h3>
             123 Beer Street<br>
