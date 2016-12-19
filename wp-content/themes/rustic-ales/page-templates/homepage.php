@@ -9,7 +9,7 @@
 		<div class="sub-title-row">
 			<h2 class="sub-title yellow">Visit Us</h2>
 		</div>
-		<div id="hover-locations-row">
+		<div id="hover-locations-row" class="clearfix">
 			<div class="col-md-6 hover-location brewery-location">
 				<div class="interior">
 				<img class="map-image" src="/images/capitola-map.jpg" alt="Map view of Sante Adairius Brewery's Capitola Location" />

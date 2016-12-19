@@ -41,6 +41,10 @@ img {
 	margin-left:auto;
 	margin-right:auto;
 }
+
+.three-fifths {
+	width:60%;
+}
 .sub-title {
 	font-size: 24px;
 	line-height:24px;
@@ -62,6 +66,10 @@ img {
 	color: #FFECBA;
 }
 
+.sub-title.dark.transparent {
+	background:url('../../../../images/dark-subtitle-transparent.png') no-repeat center center;
+	background-size:100% 100%;
+}
 .display-table {
 	display:table;
 	width:100%;
@@ -659,7 +667,23 @@ background-size:80%;
 	font-size:14px;
 }
 #location-map {
-	height:640px;
+	height:622px;
+}
+#other-locations .sub-title-wrapper {
+	text-align:center;
+	position:relative;
+	z-index:2;
+}
+
+#other-locations .hover-location {
+	position:relative;
+	margin:-70px auto 0;
+}
+
+#other-locations .hover-location a {
+	position:absolute;
+	left:0;
+	top:0;
 }
 
 @media screen and (min-width:1630px) {

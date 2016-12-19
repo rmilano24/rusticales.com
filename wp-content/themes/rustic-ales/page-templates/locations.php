@@ -34,12 +34,33 @@
 	</div>
 	<div id="location-map">
 	</div>
-	<div id="other-locations">
+	<div id="other-locations" class="y-paddings">
 		<div class="container">
 			<div class="sub-title-wrapper">
-				<h2 class="sub-title dark"><?php the_field('other_location_row_heading'); ?></h2>
+				<h2 class="sub-title dark transparent"><?php the_field('other_location_row_heading'); ?></h2>
+				
 			</div>
+			<div id="hover-locations">
+					<div id="hover-locations-row" class="clearfix">
 
+						<div class="three-fifths hover-location">
+							<div class="interior">
+							 <?php $image = get_field('other_location_map_image');
+						    if( !empty($image) ): ?>
+						        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						    <?php endif; ?>
+							<a href="<?php the_field('other_location_page_url'); ?>" class="display-table">
+								<span class="display-cell">
+								<h3><?php the_field('other_location_title'); ?></h3>
+								<h4><?php the_field('other_location_city'); ?></h4>
+								</span>
+							</a>
+							</div>
+						</div>
+					
+					</div>
+					<div class="cleaner"></div>
+				</div>
 		</div>
 	</div>
 </div>
