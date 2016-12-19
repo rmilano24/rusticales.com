@@ -1,4 +1,8 @@
 /* General */
+#beer-and-labels-the-content .container .post-content, #location-detail-content .container .post-content{
+	padding:0 230px;
+}
+
 .cleaner {
 	clear:both;
 }
@@ -22,6 +26,10 @@ body {
 	background:url('../../../../images/page-grey-bg.jpg') repeat center center;
 	background-size:1040px auto;
 }
+p:last-of-type {
+	margin-bottom:0;
+}
+
 .page-yellow-paper-bg {
 	background:url('../../../../images/page-yellow-bg.jpg') no-repeat center center;
 	background-size:cover;
@@ -535,10 +543,6 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 
 /* Beers and Labels Landing Page */
 
-#beer-and-labels-the-content .container .post-content{
-	padding:0 230px;
-}
-
 .beer-category-group .sub-title-wrapper {
 	text-align:center;
 }
@@ -642,6 +646,20 @@ background-size:80%;
 #wholesale-row .sub-title-row {
 	text-align:center;
 	margin-bottom:40px;
+}
+
+/* Location Detail */
+#location-hours-and-address {
+	margin-top:35px;
+}
+#location-hours-and-address h2 {
+	font-size:20px;
+}
+#location-hours-and-address p {
+	font-size:14px;
+}
+#location-map {
+	height:622px;
 }
 
 @media screen and (min-width:1630px) {
