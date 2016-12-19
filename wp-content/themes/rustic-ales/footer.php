@@ -94,7 +94,7 @@
     </script>
     
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTJAPBGO-m7acm5mCcb7K0BakBVYQeArc&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoB4OvUP5mHjZe_Lvdp6P3qKMnPXM3WWQ&callback=initMap">
     </script>
     <?php } ?>
     <script type="text/javascript">

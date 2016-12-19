@@ -34,6 +34,14 @@
 	</div>
 	<div id="location-map">
 	</div>
+	<div id="other-locations">
+		<div class="container">
+			<div class="sub-title-wrapper">
+				<h2 class="sub-title dark"><?php the_field('other_location_row_heading'); ?></h2>
+			</div>
+
+		</div>
+	</div>
 </div>
  
 	<?php get_footer(); ?>
