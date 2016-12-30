@@ -103,7 +103,7 @@
           $('#main-nav ul li.menu-item-has-children').on('mouseenter', function () {
           $(this).children('ul').fadeIn();  
           }).on('mouseleave', function () {
-            $(this).children('ul').delay(200).fadeOut();
+            $(this).children('ul').delay(400).fadeOut();
         });
 
         // Directional Hover Effects

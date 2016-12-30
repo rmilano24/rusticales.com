@@ -91,6 +91,9 @@
         <?php if (is_page_template('page-templates/locations.php')) { ?>
           <span class="sub-title yellow child-page-header">Get In Touch</span><br>
         <?php } ?>
+        <?php if (is_page_template('page-templates/saras-cellar.php')) { ?>
+          <span class="sub-title yellow child-page-header">Find Or Sell Our Beer</span><br>
+        <?php } ?>
       <?php the_field('banner_heading_text'); ?></h1>
       <?php } ?>
         <div class="cleaner"></div>

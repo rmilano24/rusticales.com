@@ -505,6 +505,7 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 	padding-left:6px;
 	padding-right:6px;
 	margin-bottom:12px;
+	float:none;
 }
 
 /* Beer Detail */
@@ -594,7 +595,7 @@ background:url('../../../../images/active-filter-underline.png') no-repeat cente
 background-size:80%;
 }
 /* Find Our Beers */
-#find-our-beer .post-content {
+#find-our-beer .post-content, #saras-cellar .post-content {
 	padding:0 45px;
 }
 #find-our-beer .post-content p {
@@ -656,6 +657,32 @@ background-size:80%;
 	margin-bottom:40px;
 }
 
+/* SARAs Cellar */
+#saras-cellar .post-content p {
+	font-size:20px;
+}
+#saras-cellar .post-content.sub-content {
+	padding-top:50px;
+	padding-bottom:70px;
+}
+
+#saras-cellar .post-content.sub-content p {
+	font-size: 16px;
+}
+
+#saras-cellar .post-content.sub-content strong {
+	font-weight:800;
+	margin-bottom:20px;
+	font-size:20px;
+	display:inline-block;
+}
+
+#saras-cellar #saras-cellar-logo {
+	padding:50px 0 0;
+}
+#saras-cellar #saras-cellar-logo img {
+	width:240px;
+}
 /* Location Detail */
 #location-hours-and-address {
 	margin-top:35px;
