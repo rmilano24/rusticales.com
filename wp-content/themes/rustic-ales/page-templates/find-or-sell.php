@@ -33,7 +33,7 @@
       		<div class="col-md-6 right-col">
       			<?php the_field('saras_cellar_text'); ?>
                         <div class="learn-more-right-row">
-                              <a class="drawn-underline view-more-link" href="#">Learn more ></a>
+                              <a class="drawn-underline view-more-link" href="/saras-cellar">Learn more ></a>
                         </div>
       		</div>
       		<div class="cleaner"></div>

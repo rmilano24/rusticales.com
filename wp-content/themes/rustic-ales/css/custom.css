@@ -3,6 +3,13 @@
 	padding:0 230px;
 }
 
+#find-our-beer .post-content, #saras-cellar .post-content, #our-story .post-content {
+	padding:0 45px;
+}
+
+#our-story .post-content p{
+	font-size:20px;
+}
 .cleaner {
 	clear:both;
 }
@@ -595,9 +602,7 @@ background:url('../../../../images/active-filter-underline.png') no-repeat cente
 background-size:80%;
 }
 /* Find Our Beers */
-#find-our-beer .post-content, #saras-cellar .post-content {
-	padding:0 45px;
-}
+
 #find-our-beer .post-content p {
 	font-size:20px;
 }
@@ -712,6 +717,22 @@ background-size:80%;
 	left:0;
 	top:0;
 }
+
+/* Our Story */
+
+#our-story-content-row {
+	padding-top:30px;
+}
+#our-story-content-row .left-col, #our-story-content-row .right-col {
+	width:40%;
+	float:left;
+	padding:0 15px;
+}
+#our-story-content-row .link-wrapper {
+	padding-top:40px;
+	text-align:right;
+}
+
 
 @media screen and (min-width:1630px) {
 	.large-container {
