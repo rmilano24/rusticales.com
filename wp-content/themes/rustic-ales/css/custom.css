@@ -307,6 +307,8 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 .gallery-item {
 	width:33.3333333%;
 	padding:6px;
+	float:none;
+	clear:both;
 }
 
 /* Instagram Loop */
