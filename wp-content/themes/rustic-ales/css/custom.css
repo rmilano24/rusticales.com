@@ -3,12 +3,29 @@
 	padding:0 230px;
 }
 
-#find-our-beer .post-content, #saras-cellar .post-content, #our-story .post-content {
+#find-our-beer .post-content, #saras-cellar .post-content, #our-story .post-content, .header-aligned.post-content {
 	padding:0 45px;
 }
 
-#our-story .post-content p{
+#our-story .post-content p, .header-aligned.post-content{
 	font-size:20px;
+}
+
+.header-aligned.post-content .additional-text-content {
+	font-size:16px;
+	margin-top:50px;
+}
+
+.header-aligned.post-content .additional-text-content strong {
+	font-size:18px;
+	display:block;
+}
+
+.header-aligned.post-content .additional-text-content p {
+	margin-bottom:40px;
+}
+.header-aligned.post-content .additional-text-content p:last-of-type {
+	margin-bottom:0;
 }
 .cleaner {
 	clear:both;

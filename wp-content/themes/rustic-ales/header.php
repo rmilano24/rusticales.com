@@ -88,12 +88,20 @@
 
       <?php if( get_field('banner_heading_text') ) { ?>
       <h1 id="banner-heading-text">
-        <?php if (is_page_template('page-templates/locations.php')) { ?>
-          <span class="sub-title yellow child-page-header">Get In Touch</span><br>
-        <?php } ?>
-        <?php if (is_page_template('page-templates/saras-cellar.php')) { ?>
-          <span class="sub-title yellow child-page-header">Find Or Sell Our Beer</span><br>
-        <?php } ?>
+      <?php
+      global $post;     // if outside the loop
+      if ( is_page() && $post->post_parent ) { ?>
+        <span class="sub-title yellow child-page-header">
+          <?php 
+          $current = $post->ID;
+          $parent = $post->post_parent;
+          $grandparent_get = get_post($parent);
+          $grandparent = $grandparent_get->post_parent;
+          ?>
+    <?php if ($root_parent = get_the_title($grandparent) !== $root_parent = get_the_title($current)) {echo get_the_title($grandparent); }else {echo get_the_title($parent); }?>
+            </span><br>
+        <?php } 
+        ?>
       <?php the_field('banner_heading_text'); ?></h1>
       <?php } ?>
         <div class="cleaner"></div>

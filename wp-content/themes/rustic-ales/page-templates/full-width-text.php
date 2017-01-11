@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Basic Text
+ * Template Name: Full Width - Basic Text
  *
  */
 
