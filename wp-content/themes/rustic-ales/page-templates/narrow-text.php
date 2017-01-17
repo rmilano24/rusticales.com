@@ -5,7 +5,7 @@
  */
 
 get_header(); ?>
-<div id="wholesale">
+<div id="narrow-text">
 	<div class="container y-paddings">
 		<div class="post-content header-aligned col-md-8 col-md-offset-2">
 			<?php 

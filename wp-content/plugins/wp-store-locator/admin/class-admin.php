@@ -311,15 +311,36 @@ if ( !class_exists( 'WPSL_Admin' ) ) {
         public function js_settings() {
             
             global $wpsl_settings;
-            
+
             $js_settings = array(
                 'hourFormat'    => $wpsl_settings['editor_hour_format'],
-                'defaultLatLng' => '52.378153,4.899363',
+                'defaultLatLng' => $this->get_default_lat_lng(),
                 'defaultZoom'   => 6,
                 'mapType'       => $wpsl_settings['editor_map_type']
             );
             
             return apply_filters( 'wpsl_admin_js_settings', $js_settings );
+        }
+
+        /**
+         * Get the coordinates that are used to
+         * show the map on the settings page.
+         *
+         * @since 2.2.5
+         * @return string $startLatLng The start coordinates
+         */
+        public function get_default_lat_lng() {
+
+            global $wpsl_settings;
+
+            $startLatLng = $wpsl_settings['start_latlng'];
+
+            // If no start coordinates exists, then set the default to Holland.
+            if ( !$startLatLng ) {
+                $startLatLng = '52.378153,4.899363';
+            }
+
+            return $startLatLng;
         }
 
         /**

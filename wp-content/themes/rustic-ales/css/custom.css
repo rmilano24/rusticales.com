@@ -3,7 +3,11 @@
 	padding:0 230px;
 }
 
-#find-our-beer .post-content, #saras-cellar .post-content, #our-story .post-content, .header-aligned.post-content {
+#find-our-beer .post-content, 
+#saras-cellar .post-content, 
+#our-story .post-content, 
+.header-aligned.post-content,
+.narrowed-container {
 	padding:0 45px;
 }
 
@@ -751,6 +755,8 @@ background-size:80%;
 	padding-top:40px;
 	text-align:right;
 }
+
+/* Contact */
 
 
 @media screen and (min-width:1630px) {

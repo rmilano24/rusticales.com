@@ -82,7 +82,13 @@ if ( !class_exists( 'WPSL_i18n' ) ) {
         public function maybe_get_wpml_id( $store_id ) {
             
             $return_original_id = apply_filters( 'wpsl_return_original_wpml_id', true );
-            $translated_id      = icl_object_id( $store_id, 'wpsl_stores', $return_original_id, ICL_LANGUAGE_CODE );
+
+            // icl_object_id is deprecated as of 3.2
+            if ( version_compare( ICL_SITEPRESS_VERSION, 3.2, '>=' ) ) {
+                $translated_id = apply_filters( 'wpml_object_id', $store_id, 'wpsl_stores', $return_original_id, ICL_LANGUAGE_CODE );
+            } else {
+                $translated_id = icl_object_id( $store_id, 'wpsl_stores', $return_original_id, ICL_LANGUAGE_CODE );
+            }
 
             // If '$return_original_id' is set to false, NULL is returned if no translation exists.
             if ( is_null( $translated_id ) ) {
@@ -107,18 +113,12 @@ if ( !class_exists( 'WPSL_i18n' ) ) {
             
             global $wpsl_settings;
 
-            $translation = '';
-            
-            /* Check if we need to use WPML for the translation */
             if ( $this->wpml_exists() ) {
-                $translation = icl_t( 'admin_texts_wpsl_settings', '[wpsl_settings]' . $name, $text );
-            }
-
-            /* If we don't have a translation here, we use the value set on the settings page */
-            if ( empty( $translation ) ) {
+                $translation = $text;
+            } else {
                 $translation = stripslashes( $wpsl_settings[$name] );
             }
-            
+
             return $translation;
         }  
         

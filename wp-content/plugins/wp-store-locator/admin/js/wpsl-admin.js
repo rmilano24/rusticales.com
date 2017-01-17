@@ -592,17 +592,18 @@ function currentPeriodCount( elem ) {
 function createHourOptionList( returnList ) {
 	var openingHours, openingHourInterval, hour, hrFormat,
 		pm   			   = false,
+        twelveHrsAfternoon = false,
 		pmOrAm			   = "",
 		optionList		   = "",
 		openingTimes 	   = [],
 		openingHourOptions = {
 			"hours": { 
-				"hr12": [ 0, 1, 2, 3 ,4 ,5 ,6, 7, 8, 9, 10, 11, 12, 1, 2, 3 , 4, 5, 6, 7, 8, 9, 10, 11 ],
+				"hr12": [ 12, 1, 2, 3 ,4 ,5 ,6, 7, 8, 9, 10, 11, 12, 1, 2, 3 , 4, 5, 6, 7, 8, 9, 10, 11 ],
 				"hr24": [ 0, 1, 2, 3 ,4 ,5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ,16, 17, 18, 19, 20, 21, 22, 23 ]
 			},
 			"interval": [ '00', '15', '30', '45' ]
 		};
-	
+
 	if ( $( "#wpsl-editor-hour-format" ).length ) {
 		hrFormat = $( "#wpsl-editor-hour-format" ).val();
 	} else {
@@ -632,7 +633,9 @@ function createHourOptionList( returnList ) {
 		 */
 		if ( hrFormat == 12 ) {
 			if ( hour >= 12 ) {
-				pm = true;
+				pm = ( twelveHrsAfternoon ) ? true : false;
+
+                twelveHrsAfternoon = true;
 			}
 
 			pmOrAm = ( pm ) ? "PM" : "AM";

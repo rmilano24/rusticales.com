@@ -4,8 +4,8 @@ Contributors: tijmensmit
 Donate link: https://www.paypal.me/tijmensmit
 Tags: google maps, store locator, business locations, geocoding, stores, geo, zipcode locator, dealer locater, geocode, gmaps, google map, google map plugin, location finder, map tools, shop locator, wp google map
 Requires at least: 3.7
-Tested up to: 4.6
-Stable tag: 2.2.4
+Tested up to: 4.7
+Stable tag: 2.2.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -56,9 +56,9 @@ The [CSV Manager](https://wpstorelocator.co/add-ons/csv-manager/) allows you to 
 
 The [Search Widget](https://wpstorelocator.co/add-ons/search-widget/) enables users to search from any of the widgetized areas in your theme for nearby store locations, and show the results on the store locator page.
 
-**Statistics - Coming Soon**
+**Statistics**
 
-Keep track where users are searching, and see where there is demand for a possible store. 
+The [Statistics](https://wpstorelocator.co/add-ons/statistics/) add-on enables you to keep track of the locations users are searching for and see where there is demand for a new store.
 
 **Store Directory  - Coming Soon**
 
@@ -125,6 +125,29 @@ If you find a plugin or theme that causes a conflict, please report it on the [s
 4. The plugin settings
 
 == Changelog ==
+
+= 2.2.7, December 31, 2016 =
+* Changed: Included the latest version of the EDD_SL_Plugin_Updater class ( 1.6.8 ).
+* Changed: Reverted a change in the CSS file that ended up breaking the map for some users.
+
+= 2.2.6, December 24, 2016 =
+* Fixed: The opening hours not working correctly for Saturday / Sunday in the admin area. The 12:00 AM field was missing.
+* Fixed: A PHP notice showing up when an invalid value was set for the radius / max results dropdown.
+* Fixed: The zoom attribute now works correctly for the wpsl_map shortcode.
+* Changed: Included the latest version of the EDD_SL_Plugin_Updater class ( 1.6.7 ).
+* Changed: Removed unused locationCount var from wpsl-gmap.js.
+* Changed: Added a CSS rule that makes it harder for themes to scaled images on the map.
+
+= 2.2.5, December 11, 2016 =
+* Fixed: Made it work with the latest WPML version.
+* Fixed: Remove the WPSL caps and Store Locator Manager role on uninstall. The code was always there to do so, but was never called.
+* Fixed: A PHP notice that showed up when the settings page was saved with an empty start location field.
+* Changed: Adjusted the structure of the post type labels so you can correctly translate them in singular / plural forms based on the used language. Via [deshack](https://wordpress.org/support/users/deshack/).
+* Changed: Added a tooltip to the 'Attempt to auto-locate the user' field explaining that HTTPS is now [required](https://wpstorelocator.co/document/html-5-geolocation-not-working-chrome-safari/) in Chrome and Safari.
+* Changed: The coordinates from the start location are now used to center the map in the map section on the settings page instead of it always defaulting to Holland.
+* Changed: Renamed the existing option that prevents two Google Maps libraries from loading at the same time to "Enable compatibility mode" on the settings page ( Tools section ).
+* Changed: Updated the wpsl.pot file.
+* Changed: No longer use the deprecated icl_object_id() function when the WPML version is newer then 3.2.
 
 = 2.2.4, Augustus 6, 2016 =
 * New: Added an option to the tools section to prevent other scripts from including the Google Maps API a second time on the store locator page. This sometimes breaks the map.

@@ -54,11 +54,13 @@ if ( $( ".wpsl-gmap-canvas" ).length ) {
  * @returns {void}
  */
 function initializeGmap( mapId, mapIndex ) {
-    var mapOptions, settings, infoWindow, latLng, bounds, mapData, locationCount,
-		maxZoom = Number( wpslSettings.autoZoomLevel );
+    var mapOptions, settings, infoWindow, latLng,
+		bounds, mapData, maxZoom;
 
-	// Get the settings that belong to the map.
+	// Get the settings that belongs to the current map.
 	settings = getMapSettings( mapIndex );
+
+    maxZoom = Number( settings.zoomLevel );
 
 	// Create a new infoWindow, either with the infobox libray or use the default one.
 	infoWindow = newInfoWindow();
@@ -93,8 +95,7 @@ function initializeGmap( mapId, mapIndex ) {
 	
 	if ( ( typeof window[ "wpslMap_" + mapIndex ] !== "undefined" ) && ( typeof window[ "wpslMap_" + mapIndex ].locations !== "undefined" ) ) {
 		bounds		  = new google.maps.LatLngBounds(),
-		mapData       = window[ "wpslMap_" + mapIndex ].locations,
-		locationCount = mapData.length;
+		mapData       = window[ "wpslMap_" + mapIndex ].locations;
 
 		// Loop over the map data, create the infowindow object and add each marker.
 		$.each( mapData, function( index ) {

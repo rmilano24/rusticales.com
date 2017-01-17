@@ -143,7 +143,11 @@ if ( !class_exists( 'WPSL_Settings' ) ) {
                 $output['auto_zoom_level'] = wpsl_get_default_setting( 'auto_zoom_level' );
             }
 
-            $output['start_name'] = sanitize_text_field( $_POST['wpsl_map']['start_name'] );
+            if ( isset( $_POST['wpsl_map']['start_name'] ) ) {
+                $output['start_name'] = sanitize_text_field( $_POST['wpsl_map']['start_name'] );
+            } else {
+                $output['start_name'] = '';
+            }
 
 			// If no location name is then we also empty the latlng values from the hidden input field.
 			if ( empty( $output['start_name'] ) ) {

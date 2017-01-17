@@ -180,7 +180,7 @@ global $wpdb, $wpsl, $wpsl_admin, $wp_version, $wpsl_settings;
                         <h3 class="hndle"><span><?php _e( 'Map', 'wpsl' ); ?></span></h3>
                         <div class="inside">
                             <p>
-                                <label for="wpsl-auto-locate"><?php _e( 'Attempt to auto-locate the user', 'wpsl' ); ?>:</label> 
+                                <label for="wpsl-auto-locate"><?php _e( 'Attempt to auto-locate the user', 'wpsl' ); ?>:<span class="wpsl-info"><span class="wpsl-info-text wpsl-hide"><?php echo sprintf( __( 'Safari and Chrome %srequire%s a HTTPS connection before the Geolocation feature works.', 'wpsl' ), '<a href="https://wpstorelocator.co/document/html-5-geolocation-not-working-chrome-safari/">', '</a>' ); ?></span></span></label>
                                 <input type="checkbox" value="" <?php checked( $wpsl_settings['auto_locate'], true ); ?> name="wpsl_map[auto_locate]" id="wpsl-auto-locate">
                             </p>
                             <p>
@@ -584,7 +584,7 @@ global $wpdb, $wpsl, $wpsl_admin, $wp_version, $wpsl_settings;
                                <input type="checkbox" value="" <?php checked( $wpsl_settings['debug'], true ); ?> name="wpsl_tools[debug]" id="wpsl-debug">
                             </p>
                             <p>
-                               <label for="wpsl-deregister-gmaps"><?php _e( 'Prevent other scripts from including the Google Maps API a second time on the store locator page?', 'wpsl' ); ?><span class="wpsl-info"><span class="wpsl-info-text wpsl-hide"><?php echo sprintf( __( 'If the %sbrowser console%s shows the error below, then enabling this option should fix it. %s %sYou have included the Google Maps API multiple times on this page. This may cause unexpected errors.%s %s This error can in some situations break the store locator map.', 'wpsl' ), '<a href="https://codex.wordpress.org/Using_Your_Browser_to_Diagnose_JavaScript_Errors#Step_3:_Diagnosis">', '</a>', '<br><br>', '<em>', '</em>', '<br><br>' ); ?></span></span></label> 
+                               <label for="wpsl-deregister-gmaps"><?php _e( 'Enable compatibility mode?', 'wpsl' ); ?><span class="wpsl-info"><span class="wpsl-info-text wpsl-hide"><?php echo sprintf( __( 'If the %sbrowser console%s shows the error below, then enabling this option should fix it. %s %sYou have included the Google Maps API multiple times on this page. This may cause unexpected errors.%s %s This error can in some situations break the store locator map.', 'wpsl' ), '<a href="https://codex.wordpress.org/Using_Your_Browser_to_Diagnose_JavaScript_Errors#Step_3:_Diagnosis">', '</a>', '<br><br>', '<em>', '</em>', '<br><br>' ); ?></span></span></label>
                                <input type="checkbox" value="" <?php checked( $wpsl_settings['deregister_gmaps'], true ); ?> name="wpsl_tools[deregister_gmaps]" id="wpsl-deregister-gmaps">
                             </p>
                             <p>

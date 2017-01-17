@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Store Locator v2.2.4\n"
+"Project-Id-Version: WP Store Locator v2.2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-06 15:09+0200\n"
+"POT-Creation-Date: 2016-12-11 16:49+0700\n"
 "PO-Revision-Date: 2015-09-01 13:49+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
@@ -40,12 +40,12 @@ msgid "Security check failed. Please reload the page and try again."
 msgstr ""
 
 #: admin/class-admin.php:174 admin/class-admin.php:175
-#: admin/class-admin.php:434 admin/templates/map-settings.php:11
+#: admin/class-admin.php:455 admin/templates/map-settings.php:11
 msgid "Settings"
 msgstr ""
 
 #: admin/class-admin.php:181 admin/class-admin.php:182
-#: admin/class-admin.php:454
+#: admin/class-admin.php:475
 msgid "Add-Ons"
 msgstr ""
 
@@ -70,7 +70,7 @@ msgid "The map preview requires all the location details."
 msgstr ""
 
 #: admin/class-admin.php:298 admin/class-metaboxes.php:525
-#: frontend/class-frontend.php:543
+#: frontend/class-frontend.php:545
 msgid "Closed"
 msgstr ""
 
@@ -78,19 +78,19 @@ msgstr ""
 msgid "The code for the map style is invalid."
 msgstr ""
 
-#: admin/class-admin.php:389
+#: admin/class-admin.php:410
 msgid "Welcome to WP Store Locator"
 msgstr ""
 
-#: admin/class-admin.php:390
+#: admin/class-admin.php:411
 msgid "Sign up for the latest plugin updates and announcements."
 msgstr ""
 
-#: admin/class-admin.php:453
+#: admin/class-admin.php:474
 msgid "Documentation"
 msgstr ""
 
-#: admin/class-admin.php:476
+#: admin/class-admin.php:497
 #, php-format
 msgid "If you like this plugin please leave us a %s5 star%s rating."
 msgstr ""
@@ -182,7 +182,7 @@ msgstr ""
 msgid "Location"
 msgstr ""
 
-#: admin/class-metaboxes.php:50 inc/class-post-types.php:162
+#: admin/class-metaboxes.php:50 inc/class-post-types.php:159
 msgid "Address"
 msgstr ""
 
@@ -190,11 +190,11 @@ msgstr ""
 msgid "Address 2"
 msgstr ""
 
-#: admin/class-metaboxes.php:57 inc/class-post-types.php:163
+#: admin/class-metaboxes.php:57 inc/class-post-types.php:160
 msgid "City"
 msgstr ""
 
-#: admin/class-metaboxes.php:61 inc/class-post-types.php:164
+#: admin/class-metaboxes.php:61 inc/class-post-types.php:161
 msgid "State"
 msgstr ""
 
@@ -234,7 +234,7 @@ msgid "Tel"
 msgstr ""
 
 #: admin/class-metaboxes.php:91 admin/templates/map-settings.php:522
-#: admin/templates/map-settings.php:523 frontend/class-frontend.php:791
+#: admin/templates/map-settings.php:523 frontend/class-frontend.php:793
 #: frontend/underscore-functions.php:32 frontend/underscore-functions.php:68
 #: frontend/underscore-functions.php:150 inc/wpsl-functions.php:146
 msgid "Fax"
@@ -242,7 +242,7 @@ msgstr ""
 
 #: admin/class-metaboxes.php:94 admin/templates/map-settings.php:526
 #: admin/templates/map-settings.php:527 admin/upgrade.php:198
-#: frontend/class-frontend.php:795 frontend/underscore-functions.php:35
+#: frontend/class-frontend.php:797 frontend/underscore-functions.php:35
 #: frontend/underscore-functions.php:71 frontend/underscore-functions.php:153
 #: inc/wpsl-functions.php:147
 msgid "Email"
@@ -250,7 +250,7 @@ msgstr ""
 
 #: admin/class-metaboxes.php:97 admin/templates/map-settings.php:530
 #: admin/templates/map-settings.php:531 admin/upgrade.php:202
-#: frontend/class-frontend.php:800 inc/wpsl-functions.php:148
+#: frontend/class-frontend.php:802 inc/wpsl-functions.php:148
 msgid "Url"
 msgstr ""
 
@@ -339,17 +339,17 @@ msgstr ""
 msgid "WP Store Locator Transients Cleared"
 msgstr ""
 
-#: admin/class-settings.php:398
+#: admin/class-settings.php:402
 msgid ""
 "The max results field cannot be empty, the default value has been restored."
 msgstr ""
 
-#: admin/class-settings.php:401
+#: admin/class-settings.php:405
 msgid ""
 "The search radius field cannot be empty, the default value has been restored."
 msgstr ""
 
-#: admin/class-settings.php:404
+#: admin/class-settings.php:408
 #, php-format
 msgid ""
 "Please provide the name of a city or country that can be used as a starting "
@@ -357,1116 +357,1116 @@ msgid ""
 "user fails, or the option itself is disabled."
 msgstr ""
 
-#: admin/class-settings.php:425
+#: admin/class-settings.php:429
 msgid "Select your language"
 msgstr ""
 
-#: admin/class-settings.php:426
+#: admin/class-settings.php:430
 msgid "English"
 msgstr ""
 
-#: admin/class-settings.php:427
+#: admin/class-settings.php:431
 msgid "Arabic"
 msgstr ""
 
-#: admin/class-settings.php:428
+#: admin/class-settings.php:432
 msgid "Basque"
 msgstr ""
 
-#: admin/class-settings.php:429
+#: admin/class-settings.php:433
 msgid "Bulgarian"
 msgstr ""
 
-#: admin/class-settings.php:430
+#: admin/class-settings.php:434
 msgid "Bengali"
 msgstr ""
 
-#: admin/class-settings.php:431
+#: admin/class-settings.php:435
 msgid "Catalan"
 msgstr ""
 
-#: admin/class-settings.php:432
+#: admin/class-settings.php:436
 msgid "Czech"
 msgstr ""
 
-#: admin/class-settings.php:433
+#: admin/class-settings.php:437
 msgid "Danish"
 msgstr ""
 
-#: admin/class-settings.php:434
+#: admin/class-settings.php:438
 msgid "German"
 msgstr ""
 
-#: admin/class-settings.php:435
+#: admin/class-settings.php:439
 msgid "Greek"
 msgstr ""
 
-#: admin/class-settings.php:436
+#: admin/class-settings.php:440
 msgid "English (Australian)"
 msgstr ""
 
-#: admin/class-settings.php:437
+#: admin/class-settings.php:441
 msgid "English (Great Britain)"
 msgstr ""
 
-#: admin/class-settings.php:438
+#: admin/class-settings.php:442
 msgid "Spanish"
 msgstr ""
 
-#: admin/class-settings.php:439
+#: admin/class-settings.php:443
 msgid "Farsi"
 msgstr ""
 
-#: admin/class-settings.php:440
+#: admin/class-settings.php:444
 msgid "Finnish"
 msgstr ""
 
-#: admin/class-settings.php:441
+#: admin/class-settings.php:445
 msgid "Filipino"
 msgstr ""
 
-#: admin/class-settings.php:442
+#: admin/class-settings.php:446
 msgid "French"
 msgstr ""
 
-#: admin/class-settings.php:443
+#: admin/class-settings.php:447
 msgid "Galician"
 msgstr ""
 
-#: admin/class-settings.php:444
+#: admin/class-settings.php:448
 msgid "Gujarati"
 msgstr ""
 
-#: admin/class-settings.php:445
+#: admin/class-settings.php:449
 msgid "Hindi"
 msgstr ""
 
-#: admin/class-settings.php:446
+#: admin/class-settings.php:450
 msgid "Croatian"
 msgstr ""
 
-#: admin/class-settings.php:447
+#: admin/class-settings.php:451
 msgid "Hungarian"
 msgstr ""
 
-#: admin/class-settings.php:448
+#: admin/class-settings.php:452
 msgid "Indonesian"
 msgstr ""
 
-#: admin/class-settings.php:449
+#: admin/class-settings.php:453
 msgid "Italian"
 msgstr ""
 
-#: admin/class-settings.php:450
+#: admin/class-settings.php:454
 msgid "Hebrew"
 msgstr ""
 
-#: admin/class-settings.php:451
+#: admin/class-settings.php:455
 msgid "Japanese"
 msgstr ""
 
-#: admin/class-settings.php:452
+#: admin/class-settings.php:456
 msgid "Kannada"
 msgstr ""
 
-#: admin/class-settings.php:453
+#: admin/class-settings.php:457
 msgid "Korean"
 msgstr ""
 
-#: admin/class-settings.php:454
+#: admin/class-settings.php:458
 msgid "Lithuanian"
 msgstr ""
 
-#: admin/class-settings.php:455
+#: admin/class-settings.php:459
 msgid "Latvian"
 msgstr ""
 
-#: admin/class-settings.php:456
+#: admin/class-settings.php:460
 msgid "Malayalam"
 msgstr ""
 
-#: admin/class-settings.php:457
+#: admin/class-settings.php:461
 msgid "Marathi"
 msgstr ""
 
-#: admin/class-settings.php:458
+#: admin/class-settings.php:462
 msgid "Dutch"
 msgstr ""
 
-#: admin/class-settings.php:459
+#: admin/class-settings.php:463
 msgid "Norwegian"
 msgstr ""
 
-#: admin/class-settings.php:460
+#: admin/class-settings.php:464
 msgid "Norwegian Nynorsk"
 msgstr ""
 
-#: admin/class-settings.php:461
+#: admin/class-settings.php:465
 msgid "Polish"
 msgstr ""
 
-#: admin/class-settings.php:462
+#: admin/class-settings.php:466
 msgid "Portuguese"
 msgstr ""
 
-#: admin/class-settings.php:463
+#: admin/class-settings.php:467
 msgid "Portuguese (Brazil)"
 msgstr ""
 
-#: admin/class-settings.php:464
+#: admin/class-settings.php:468
 msgid "Portuguese (Portugal)"
 msgstr ""
 
-#: admin/class-settings.php:465
+#: admin/class-settings.php:469
 msgid "Romanian"
 msgstr ""
 
-#: admin/class-settings.php:466
+#: admin/class-settings.php:470
 msgid "Russian"
 msgstr ""
 
-#: admin/class-settings.php:467
+#: admin/class-settings.php:471
 msgid "Slovak"
 msgstr ""
 
-#: admin/class-settings.php:468
+#: admin/class-settings.php:472
 msgid "Slovenian"
 msgstr ""
 
-#: admin/class-settings.php:469
+#: admin/class-settings.php:473
 msgid "Serbian"
 msgstr ""
 
-#: admin/class-settings.php:470
+#: admin/class-settings.php:474
 msgid "Swedish"
 msgstr ""
 
-#: admin/class-settings.php:471
+#: admin/class-settings.php:475
 msgid "Tagalog"
 msgstr ""
 
-#: admin/class-settings.php:472
+#: admin/class-settings.php:476
 msgid "Tamil"
 msgstr ""
 
-#: admin/class-settings.php:473
+#: admin/class-settings.php:477
 msgid "Telugu"
 msgstr ""
 
-#: admin/class-settings.php:474
+#: admin/class-settings.php:478
 msgid "Thai"
 msgstr ""
 
-#: admin/class-settings.php:475
+#: admin/class-settings.php:479
 msgid "Turkish"
 msgstr ""
 
-#: admin/class-settings.php:476
+#: admin/class-settings.php:480
 msgid "Ukrainian"
 msgstr ""
 
-#: admin/class-settings.php:477
+#: admin/class-settings.php:481
 msgid "Vietnamese"
 msgstr ""
 
-#: admin/class-settings.php:478
+#: admin/class-settings.php:482
 msgid "Chinese (Simplified)"
 msgstr ""
 
-#: admin/class-settings.php:479
+#: admin/class-settings.php:483
 msgid "Chinese (Traditional)"
 msgstr ""
 
-#: admin/class-settings.php:484
+#: admin/class-settings.php:488
 msgid "Select your region"
 msgstr ""
 
-#: admin/class-settings.php:485
+#: admin/class-settings.php:489
 msgid "Afghanistan"
 msgstr ""
 
-#: admin/class-settings.php:486
+#: admin/class-settings.php:490
 msgid "Albania"
 msgstr ""
 
-#: admin/class-settings.php:487
+#: admin/class-settings.php:491
 msgid "Algeria"
 msgstr ""
 
-#: admin/class-settings.php:488
+#: admin/class-settings.php:492
 msgid "American Samoa"
 msgstr ""
 
-#: admin/class-settings.php:489
+#: admin/class-settings.php:493
 msgid "Andorra"
 msgstr ""
 
-#: admin/class-settings.php:490
+#: admin/class-settings.php:494
 msgid "Anguilla"
 msgstr ""
 
-#: admin/class-settings.php:491
+#: admin/class-settings.php:495
 msgid "Angola"
 msgstr ""
 
-#: admin/class-settings.php:492
+#: admin/class-settings.php:496
 msgid "Antigua and Barbuda"
 msgstr ""
 
-#: admin/class-settings.php:493
+#: admin/class-settings.php:497
 msgid "Argentina"
 msgstr ""
 
-#: admin/class-settings.php:494
+#: admin/class-settings.php:498
 msgid "Armenia"
 msgstr ""
 
-#: admin/class-settings.php:495
+#: admin/class-settings.php:499
 msgid "Aruba"
 msgstr ""
 
-#: admin/class-settings.php:496
+#: admin/class-settings.php:500
 msgid "Australia"
 msgstr ""
 
-#: admin/class-settings.php:497
+#: admin/class-settings.php:501
 msgid "Austria"
 msgstr ""
 
-#: admin/class-settings.php:498
+#: admin/class-settings.php:502
 msgid "Azerbaijan"
 msgstr ""
 
-#: admin/class-settings.php:499
+#: admin/class-settings.php:503
 msgid "Bahamas"
 msgstr ""
 
-#: admin/class-settings.php:500
+#: admin/class-settings.php:504
 msgid "Bahrain"
 msgstr ""
 
-#: admin/class-settings.php:501
+#: admin/class-settings.php:505
 msgid "Bangladesh"
 msgstr ""
 
-#: admin/class-settings.php:502
+#: admin/class-settings.php:506
 msgid "Barbados"
 msgstr ""
 
-#: admin/class-settings.php:503
+#: admin/class-settings.php:507
 msgid "Belarus"
 msgstr ""
 
-#: admin/class-settings.php:504
+#: admin/class-settings.php:508
 msgid "Belgium"
 msgstr ""
 
-#: admin/class-settings.php:505
+#: admin/class-settings.php:509
 msgid "Belize"
 msgstr ""
 
-#: admin/class-settings.php:506
+#: admin/class-settings.php:510
 msgid "Benin"
 msgstr ""
 
-#: admin/class-settings.php:507
+#: admin/class-settings.php:511
 msgid "Bermuda"
 msgstr ""
 
-#: admin/class-settings.php:508
+#: admin/class-settings.php:512
 msgid "Bhutan"
 msgstr ""
 
-#: admin/class-settings.php:509
+#: admin/class-settings.php:513
 msgid "Bolivia"
 msgstr ""
 
-#: admin/class-settings.php:510
+#: admin/class-settings.php:514
 msgid "Bosnia and Herzegovina"
 msgstr ""
 
-#: admin/class-settings.php:511
+#: admin/class-settings.php:515
 msgid "Botswana"
 msgstr ""
 
-#: admin/class-settings.php:512
+#: admin/class-settings.php:516
 msgid "Brazil"
 msgstr ""
 
-#: admin/class-settings.php:513
+#: admin/class-settings.php:517
 msgid "British Indian Ocean Territory"
 msgstr ""
 
-#: admin/class-settings.php:514
+#: admin/class-settings.php:518
 msgid "Brunei"
 msgstr ""
 
-#: admin/class-settings.php:515
+#: admin/class-settings.php:519
 msgid "Bulgaria"
 msgstr ""
 
-#: admin/class-settings.php:516
+#: admin/class-settings.php:520
 msgid "Burkina Faso"
 msgstr ""
 
-#: admin/class-settings.php:517
+#: admin/class-settings.php:521
 msgid "Burundi"
 msgstr ""
 
-#: admin/class-settings.php:518
+#: admin/class-settings.php:522
 msgid "Cambodia"
 msgstr ""
 
-#: admin/class-settings.php:519
+#: admin/class-settings.php:523
 msgid "Cameroon"
 msgstr ""
 
-#: admin/class-settings.php:520
+#: admin/class-settings.php:524
 msgid "Canada"
 msgstr ""
 
-#: admin/class-settings.php:521
+#: admin/class-settings.php:525
 msgid "Cape Verde"
 msgstr ""
 
-#: admin/class-settings.php:522
+#: admin/class-settings.php:526
 msgid "Cayman Islands"
 msgstr ""
 
-#: admin/class-settings.php:523
+#: admin/class-settings.php:527
 msgid "Central African Republic"
 msgstr ""
 
-#: admin/class-settings.php:524
+#: admin/class-settings.php:528
 msgid "Chad"
 msgstr ""
 
-#: admin/class-settings.php:525
+#: admin/class-settings.php:529
 msgid "Chile"
 msgstr ""
 
-#: admin/class-settings.php:526
+#: admin/class-settings.php:530
 msgid "China"
 msgstr ""
 
-#: admin/class-settings.php:527
+#: admin/class-settings.php:531
 msgid "Christmas Island"
 msgstr ""
 
-#: admin/class-settings.php:528
+#: admin/class-settings.php:532
 msgid "Cocos Islands"
 msgstr ""
 
-#: admin/class-settings.php:529
+#: admin/class-settings.php:533
 msgid "Colombia"
 msgstr ""
 
-#: admin/class-settings.php:530
+#: admin/class-settings.php:534
 msgid "Comoros"
 msgstr ""
 
-#: admin/class-settings.php:531
+#: admin/class-settings.php:535
 msgid "Congo"
 msgstr ""
 
-#: admin/class-settings.php:532
+#: admin/class-settings.php:536
 msgid "Costa Rica"
 msgstr ""
 
-#: admin/class-settings.php:533
+#: admin/class-settings.php:537
 msgid "Côte d'Ivoire"
 msgstr ""
 
-#: admin/class-settings.php:534
+#: admin/class-settings.php:538
 msgid "Croatia"
 msgstr ""
 
-#: admin/class-settings.php:535
+#: admin/class-settings.php:539
 msgid "Cuba"
 msgstr ""
 
-#: admin/class-settings.php:536
+#: admin/class-settings.php:540
 msgid "Czech Republic"
 msgstr ""
 
-#: admin/class-settings.php:537
+#: admin/class-settings.php:541
 msgid "Denmark"
 msgstr ""
 
-#: admin/class-settings.php:538
+#: admin/class-settings.php:542
 msgid "Djibouti"
 msgstr ""
 
-#: admin/class-settings.php:539
+#: admin/class-settings.php:543
 msgid "Democratic Republic of the Congo"
 msgstr ""
 
-#: admin/class-settings.php:540
+#: admin/class-settings.php:544
 msgid "Dominica"
 msgstr ""
 
-#: admin/class-settings.php:541
+#: admin/class-settings.php:545
 msgid "Dominican Republic"
 msgstr ""
 
-#: admin/class-settings.php:542
+#: admin/class-settings.php:546
 msgid "Ecuador"
 msgstr ""
 
-#: admin/class-settings.php:543
+#: admin/class-settings.php:547
 msgid "Egypt"
 msgstr ""
 
-#: admin/class-settings.php:544
+#: admin/class-settings.php:548
 msgid "El Salvador"
 msgstr ""
 
-#: admin/class-settings.php:545
+#: admin/class-settings.php:549
 msgid "Equatorial Guinea"
 msgstr ""
 
-#: admin/class-settings.php:546
+#: admin/class-settings.php:550
 msgid "Eritrea"
 msgstr ""
 
-#: admin/class-settings.php:547
+#: admin/class-settings.php:551
 msgid "Estonia"
 msgstr ""
 
-#: admin/class-settings.php:548
+#: admin/class-settings.php:552
 msgid "Ethiopia"
 msgstr ""
 
-#: admin/class-settings.php:549
+#: admin/class-settings.php:553
 msgid "Fiji"
 msgstr ""
 
-#: admin/class-settings.php:550
+#: admin/class-settings.php:554
 msgid "Finland"
 msgstr ""
 
-#: admin/class-settings.php:551
+#: admin/class-settings.php:555
 msgid "France"
 msgstr ""
 
-#: admin/class-settings.php:552
+#: admin/class-settings.php:556
 msgid "French Guiana"
 msgstr ""
 
-#: admin/class-settings.php:553
+#: admin/class-settings.php:557
 msgid "Gabon"
 msgstr ""
 
-#: admin/class-settings.php:554
+#: admin/class-settings.php:558
 msgid "Gambia"
 msgstr ""
 
-#: admin/class-settings.php:555
+#: admin/class-settings.php:559
 msgid "Germany"
 msgstr ""
 
-#: admin/class-settings.php:556
+#: admin/class-settings.php:560
 msgid "Ghana"
 msgstr ""
 
-#: admin/class-settings.php:557
+#: admin/class-settings.php:561
 msgid "Greenland"
 msgstr ""
 
-#: admin/class-settings.php:558
+#: admin/class-settings.php:562
 msgid "Greece"
 msgstr ""
 
-#: admin/class-settings.php:559
+#: admin/class-settings.php:563
 msgid "Grenada"
 msgstr ""
 
-#: admin/class-settings.php:560
+#: admin/class-settings.php:564
 msgid "Guam"
 msgstr ""
 
-#: admin/class-settings.php:561
+#: admin/class-settings.php:565
 msgid "Guadeloupe"
 msgstr ""
 
-#: admin/class-settings.php:562
+#: admin/class-settings.php:566
 msgid "Guatemala"
 msgstr ""
 
-#: admin/class-settings.php:563
+#: admin/class-settings.php:567
 msgid "Guinea"
 msgstr ""
 
-#: admin/class-settings.php:564
+#: admin/class-settings.php:568
 msgid "Guinea-Bissau"
 msgstr ""
 
-#: admin/class-settings.php:565
+#: admin/class-settings.php:569
 msgid "Haiti"
 msgstr ""
 
-#: admin/class-settings.php:566
+#: admin/class-settings.php:570
 msgid "Honduras"
 msgstr ""
 
-#: admin/class-settings.php:567
+#: admin/class-settings.php:571
 msgid "Hong Kong"
 msgstr ""
 
-#: admin/class-settings.php:568
+#: admin/class-settings.php:572
 msgid "Hungary"
 msgstr ""
 
-#: admin/class-settings.php:569
+#: admin/class-settings.php:573
 msgid "Iceland"
 msgstr ""
 
-#: admin/class-settings.php:570
+#: admin/class-settings.php:574
 msgid "India"
 msgstr ""
 
-#: admin/class-settings.php:571
+#: admin/class-settings.php:575
 msgid "Indonesia"
 msgstr ""
 
-#: admin/class-settings.php:572
+#: admin/class-settings.php:576
 msgid "Iran"
 msgstr ""
 
-#: admin/class-settings.php:573
+#: admin/class-settings.php:577
 msgid "Iraq"
 msgstr ""
 
-#: admin/class-settings.php:574
+#: admin/class-settings.php:578
 msgid "Ireland"
 msgstr ""
 
-#: admin/class-settings.php:575
+#: admin/class-settings.php:579
 msgid "Israel"
 msgstr ""
 
-#: admin/class-settings.php:576
+#: admin/class-settings.php:580
 msgid "Italy"
 msgstr ""
 
-#: admin/class-settings.php:577
+#: admin/class-settings.php:581
 msgid "Jamaica"
 msgstr ""
 
-#: admin/class-settings.php:578
+#: admin/class-settings.php:582
 msgid "Japan"
 msgstr ""
 
-#: admin/class-settings.php:579
+#: admin/class-settings.php:583
 msgid "Jordan"
 msgstr ""
 
-#: admin/class-settings.php:580
+#: admin/class-settings.php:584
 msgid "Kazakhstan"
 msgstr ""
 
-#: admin/class-settings.php:581
+#: admin/class-settings.php:585
 msgid "Kenya"
 msgstr ""
 
-#: admin/class-settings.php:582
+#: admin/class-settings.php:586
 msgid "Kuwait"
 msgstr ""
 
-#: admin/class-settings.php:583
+#: admin/class-settings.php:587
 msgid "Kyrgyzstan"
 msgstr ""
 
-#: admin/class-settings.php:584
+#: admin/class-settings.php:588
 msgid "Laos"
 msgstr ""
 
-#: admin/class-settings.php:585
+#: admin/class-settings.php:589
 msgid "Latvia"
 msgstr ""
 
-#: admin/class-settings.php:586
+#: admin/class-settings.php:590
 msgid "Lebanon"
 msgstr ""
 
-#: admin/class-settings.php:587
+#: admin/class-settings.php:591
 msgid "Lesotho"
 msgstr ""
 
-#: admin/class-settings.php:588
+#: admin/class-settings.php:592
 msgid "Liberia"
 msgstr ""
 
-#: admin/class-settings.php:589
+#: admin/class-settings.php:593
 msgid "Libya"
 msgstr ""
 
-#: admin/class-settings.php:590
+#: admin/class-settings.php:594
 msgid "Liechtenstein"
 msgstr ""
 
-#: admin/class-settings.php:591
+#: admin/class-settings.php:595
 msgid "Lithuania"
 msgstr ""
 
-#: admin/class-settings.php:592
+#: admin/class-settings.php:596
 msgid "Luxembourg"
 msgstr ""
 
-#: admin/class-settings.php:593
+#: admin/class-settings.php:597
 msgid "Macau"
 msgstr ""
 
-#: admin/class-settings.php:594
+#: admin/class-settings.php:598
 msgid "Macedonia"
 msgstr ""
 
-#: admin/class-settings.php:595
+#: admin/class-settings.php:599
 msgid "Madagascar"
 msgstr ""
 
-#: admin/class-settings.php:596
+#: admin/class-settings.php:600
 msgid "Malawi"
 msgstr ""
 
-#: admin/class-settings.php:597
+#: admin/class-settings.php:601
 msgid "Malaysia "
 msgstr ""
 
-#: admin/class-settings.php:598
+#: admin/class-settings.php:602
 msgid "Mali"
 msgstr ""
 
-#: admin/class-settings.php:599
+#: admin/class-settings.php:603
 msgid "Marshall Islands"
 msgstr ""
 
-#: admin/class-settings.php:600
+#: admin/class-settings.php:604
 msgid "Martinique"
 msgstr ""
 
-#: admin/class-settings.php:601
+#: admin/class-settings.php:605
 msgid "Mauritania"
 msgstr ""
 
-#: admin/class-settings.php:602
+#: admin/class-settings.php:606
 msgid "Mauritius"
 msgstr ""
 
-#: admin/class-settings.php:603
+#: admin/class-settings.php:607
 msgid "Mexico"
 msgstr ""
 
-#: admin/class-settings.php:604
+#: admin/class-settings.php:608
 msgid "Micronesia"
 msgstr ""
 
-#: admin/class-settings.php:605
+#: admin/class-settings.php:609
 msgid "Moldova"
 msgstr ""
 
-#: admin/class-settings.php:606
+#: admin/class-settings.php:610
 msgid "Monaco"
 msgstr ""
 
-#: admin/class-settings.php:607
+#: admin/class-settings.php:611
 msgid "Mongolia"
 msgstr ""
 
-#: admin/class-settings.php:608
+#: admin/class-settings.php:612
 msgid "Montenegro"
 msgstr ""
 
-#: admin/class-settings.php:609
+#: admin/class-settings.php:613
 msgid "Montserrat"
 msgstr ""
 
-#: admin/class-settings.php:610
+#: admin/class-settings.php:614
 msgid "Morocco"
 msgstr ""
 
-#: admin/class-settings.php:611
+#: admin/class-settings.php:615
 msgid "Mozambique"
 msgstr ""
 
-#: admin/class-settings.php:612
+#: admin/class-settings.php:616
 msgid "Myanmar"
 msgstr ""
 
-#: admin/class-settings.php:613
+#: admin/class-settings.php:617
 msgid "Namibia"
 msgstr ""
 
-#: admin/class-settings.php:614
+#: admin/class-settings.php:618
 msgid "Nauru"
 msgstr ""
 
-#: admin/class-settings.php:615
+#: admin/class-settings.php:619
 msgid "Nepal"
 msgstr ""
 
-#: admin/class-settings.php:616
+#: admin/class-settings.php:620
 msgid "Netherlands"
 msgstr ""
 
-#: admin/class-settings.php:617
+#: admin/class-settings.php:621
 msgid "Netherlands Antilles"
 msgstr ""
 
-#: admin/class-settings.php:618
+#: admin/class-settings.php:622
 msgid "New Zealand"
 msgstr ""
 
-#: admin/class-settings.php:619
+#: admin/class-settings.php:623
 msgid "Nicaragua"
 msgstr ""
 
-#: admin/class-settings.php:620
+#: admin/class-settings.php:624
 msgid "Niger"
 msgstr ""
 
-#: admin/class-settings.php:621
+#: admin/class-settings.php:625
 msgid "Nigeria"
 msgstr ""
 
-#: admin/class-settings.php:622
+#: admin/class-settings.php:626
 msgid "Niue"
 msgstr ""
 
-#: admin/class-settings.php:623
+#: admin/class-settings.php:627
 msgid "Northern Mariana Islands"
 msgstr ""
 
-#: admin/class-settings.php:624
+#: admin/class-settings.php:628
 msgid "Norway"
 msgstr ""
 
-#: admin/class-settings.php:625
+#: admin/class-settings.php:629
 msgid "Oman"
 msgstr ""
 
-#: admin/class-settings.php:626
+#: admin/class-settings.php:630
 msgid "Pakistan"
 msgstr ""
 
-#: admin/class-settings.php:627
+#: admin/class-settings.php:631
 msgid "Panama"
 msgstr ""
 
-#: admin/class-settings.php:628
+#: admin/class-settings.php:632
 msgid "Papua New Guinea"
 msgstr ""
 
-#: admin/class-settings.php:629
+#: admin/class-settings.php:633
 msgid "Paraguay"
 msgstr ""
 
-#: admin/class-settings.php:630
+#: admin/class-settings.php:634
 msgid "Peru"
 msgstr ""
 
-#: admin/class-settings.php:631
+#: admin/class-settings.php:635
 msgid "Philippines"
 msgstr ""
 
-#: admin/class-settings.php:632
+#: admin/class-settings.php:636
 msgid "Pitcairn Islands"
 msgstr ""
 
-#: admin/class-settings.php:633
+#: admin/class-settings.php:637
 msgid "Poland"
 msgstr ""
 
-#: admin/class-settings.php:634
+#: admin/class-settings.php:638
 msgid "Portugal"
 msgstr ""
 
-#: admin/class-settings.php:635
+#: admin/class-settings.php:639
 msgid "Qatar"
 msgstr ""
 
-#: admin/class-settings.php:636
+#: admin/class-settings.php:640
 msgid "Reunion"
 msgstr ""
 
-#: admin/class-settings.php:637
+#: admin/class-settings.php:641
 msgid "Romania"
 msgstr ""
 
-#: admin/class-settings.php:638
+#: admin/class-settings.php:642
 msgid "Russia"
 msgstr ""
 
-#: admin/class-settings.php:639
+#: admin/class-settings.php:643
 msgid "Rwanda"
 msgstr ""
 
-#: admin/class-settings.php:640
+#: admin/class-settings.php:644
 msgid "Saint Helena"
 msgstr ""
 
-#: admin/class-settings.php:641
+#: admin/class-settings.php:645
 msgid "Saint Kitts and Nevis"
 msgstr ""
 
-#: admin/class-settings.php:642
+#: admin/class-settings.php:646
 msgid "Saint Vincent and the Grenadines"
 msgstr ""
 
-#: admin/class-settings.php:643
+#: admin/class-settings.php:647
 msgid "Saint Lucia"
 msgstr ""
 
-#: admin/class-settings.php:644
+#: admin/class-settings.php:648
 msgid "Samoa"
 msgstr ""
 
-#: admin/class-settings.php:645
+#: admin/class-settings.php:649
 msgid "San Marino"
 msgstr ""
 
-#: admin/class-settings.php:646
+#: admin/class-settings.php:650
 msgid "São Tomé and Príncipe"
 msgstr ""
 
-#: admin/class-settings.php:647
+#: admin/class-settings.php:651
 msgid "Saudi Arabia"
 msgstr ""
 
-#: admin/class-settings.php:648
+#: admin/class-settings.php:652
 msgid "Senegal"
 msgstr ""
 
-#: admin/class-settings.php:649
+#: admin/class-settings.php:653
 msgid "Serbia"
 msgstr ""
 
-#: admin/class-settings.php:650
+#: admin/class-settings.php:654
 msgid "Seychelles"
 msgstr ""
 
-#: admin/class-settings.php:651
+#: admin/class-settings.php:655
 msgid "Sierra Leone"
 msgstr ""
 
-#: admin/class-settings.php:652
+#: admin/class-settings.php:656
 msgid "Singapore"
 msgstr ""
 
-#: admin/class-settings.php:653
+#: admin/class-settings.php:657
 msgid "Slovakia"
 msgstr ""
 
-#: admin/class-settings.php:654
+#: admin/class-settings.php:658
 msgid "Solomon Islands"
 msgstr ""
 
-#: admin/class-settings.php:655
+#: admin/class-settings.php:659
 msgid "Somalia"
 msgstr ""
 
-#: admin/class-settings.php:656
+#: admin/class-settings.php:660
 msgid "South Africa"
 msgstr ""
 
-#: admin/class-settings.php:657
+#: admin/class-settings.php:661
 msgid "South Korea"
 msgstr ""
 
-#: admin/class-settings.php:658
+#: admin/class-settings.php:662
 msgid "Spain"
 msgstr ""
 
-#: admin/class-settings.php:659
+#: admin/class-settings.php:663
 msgid "Sri Lanka"
 msgstr ""
 
-#: admin/class-settings.php:660
+#: admin/class-settings.php:664
 msgid "Sudan"
 msgstr ""
 
-#: admin/class-settings.php:661
+#: admin/class-settings.php:665
 msgid "Swaziland"
 msgstr ""
 
-#: admin/class-settings.php:662
+#: admin/class-settings.php:666
 msgid "Sweden"
 msgstr ""
 
-#: admin/class-settings.php:663
+#: admin/class-settings.php:667
 msgid "Switzerland"
 msgstr ""
 
-#: admin/class-settings.php:664
+#: admin/class-settings.php:668
 msgid "Syria"
 msgstr ""
 
-#: admin/class-settings.php:665
+#: admin/class-settings.php:669
 msgid "Taiwan"
 msgstr ""
 
-#: admin/class-settings.php:666
+#: admin/class-settings.php:670
 msgid "Tajikistan"
 msgstr ""
 
-#: admin/class-settings.php:667
+#: admin/class-settings.php:671
 msgid "Tanzania"
 msgstr ""
 
-#: admin/class-settings.php:668
+#: admin/class-settings.php:672
 msgid "Thailand"
 msgstr ""
 
-#: admin/class-settings.php:669
+#: admin/class-settings.php:673
 msgid "Timor-Leste"
 msgstr ""
 
-#: admin/class-settings.php:670
+#: admin/class-settings.php:674
 msgid "Tokelau"
 msgstr ""
 
-#: admin/class-settings.php:671
+#: admin/class-settings.php:675
 msgid "Togo"
 msgstr ""
 
-#: admin/class-settings.php:672
+#: admin/class-settings.php:676
 msgid "Tonga"
 msgstr ""
 
-#: admin/class-settings.php:673
+#: admin/class-settings.php:677
 msgid "Trinidad and Tobago"
 msgstr ""
 
-#: admin/class-settings.php:674
+#: admin/class-settings.php:678
 msgid "Tunisia"
 msgstr ""
 
-#: admin/class-settings.php:675
+#: admin/class-settings.php:679
 msgid "Turkey"
 msgstr ""
 
-#: admin/class-settings.php:676
+#: admin/class-settings.php:680
 msgid "Turkmenistan"
 msgstr ""
 
-#: admin/class-settings.php:677
+#: admin/class-settings.php:681
 msgid "Tuvalu"
 msgstr ""
 
-#: admin/class-settings.php:678
+#: admin/class-settings.php:682
 msgid "Uganda"
 msgstr ""
 
-#: admin/class-settings.php:679
+#: admin/class-settings.php:683
 msgid "Ukraine"
 msgstr ""
 
-#: admin/class-settings.php:680
+#: admin/class-settings.php:684
 msgid "United Arab Emirates"
 msgstr ""
 
-#: admin/class-settings.php:681
+#: admin/class-settings.php:685
 msgid "United Kingdom"
 msgstr ""
 
-#: admin/class-settings.php:682
+#: admin/class-settings.php:686
 msgid "United States"
 msgstr ""
 
-#: admin/class-settings.php:683
+#: admin/class-settings.php:687
 msgid "Uruguay"
 msgstr ""
 
-#: admin/class-settings.php:684
+#: admin/class-settings.php:688
 msgid "Uzbekistan"
 msgstr ""
 
-#: admin/class-settings.php:685
+#: admin/class-settings.php:689
 msgid "Wallis Futuna"
 msgstr ""
 
-#: admin/class-settings.php:686
+#: admin/class-settings.php:690
 msgid "Venezuela"
 msgstr ""
 
-#: admin/class-settings.php:687
+#: admin/class-settings.php:691
 msgid "Vietnam"
 msgstr ""
 
-#: admin/class-settings.php:688
+#: admin/class-settings.php:692
 msgid "Yemen"
 msgstr ""
 
-#: admin/class-settings.php:689
+#: admin/class-settings.php:693
 msgid "Zambia"
 msgstr ""
 
-#: admin/class-settings.php:690
+#: admin/class-settings.php:694
 msgid "Zimbabwe"
 msgstr ""
 
-#: admin/class-settings.php:733
+#: admin/class-settings.php:737
 msgid "World view"
 msgstr ""
 
-#: admin/class-settings.php:736 admin/class-settings.php:850
+#: admin/class-settings.php:740 admin/class-settings.php:854
 #: inc/wpsl-functions.php:215
 msgid "Default"
 msgstr ""
 
-#: admin/class-settings.php:739 inc/wpsl-functions.php:288
+#: admin/class-settings.php:743 inc/wpsl-functions.php:288
 msgid "Roadmap"
 msgstr ""
 
-#: admin/class-settings.php:880
+#: admin/class-settings.php:884
 msgid "Start location marker"
 msgstr ""
 
-#: admin/class-settings.php:882
+#: admin/class-settings.php:886
 msgid "Store location marker"
 msgstr ""
 
-#: admin/class-settings.php:964
+#: admin/class-settings.php:968
 msgid "Textarea"
 msgstr ""
 
-#: admin/class-settings.php:965
+#: admin/class-settings.php:969
 msgid "Dropdowns (recommended)"
 msgstr ""
 
-#: admin/class-settings.php:973
+#: admin/class-settings.php:977
 msgid "Bounces up and down"
 msgstr ""
 
-#: admin/class-settings.php:974
+#: admin/class-settings.php:978
 msgid "Will open the info window"
 msgstr ""
 
-#: admin/class-settings.php:975
+#: admin/class-settings.php:979
 msgid "Does not respond"
 msgstr ""
 
-#: admin/class-settings.php:983
+#: admin/class-settings.php:987
 msgid "In the store listings"
 msgstr ""
 
-#: admin/class-settings.php:984
+#: admin/class-settings.php:988
 msgid "In the info window on the map"
 msgstr ""
 
-#: admin/class-settings.php:1016
+#: admin/class-settings.php:1020
 msgid "Dropdown"
 msgstr ""
 
-#: admin/class-settings.php:1017
+#: admin/class-settings.php:1021
 msgid "Checkboxes"
 msgstr ""
 
-#: admin/class-settings.php:1049
+#: admin/class-settings.php:1053
 msgid "12 Hours"
 msgstr ""
 
-#: admin/class-settings.php:1050
+#: admin/class-settings.php:1054
 msgid "24 Hours"
 msgstr ""
 
@@ -1631,6 +1631,13 @@ msgstr ""
 
 #: admin/templates/map-settings.php:183
 msgid "Attempt to auto-locate the user"
+msgstr ""
+
+#: admin/templates/map-settings.php:183
+#, php-format
+msgid ""
+"Safari and Chrome %srequire%s a HTTPS connection before the Geolocation "
+"feature works."
 msgstr ""
 
 #: admin/templates/map-settings.php:187
@@ -2033,7 +2040,7 @@ msgid "Search radius"
 msgstr ""
 
 #: admin/templates/map-settings.php:490 admin/templates/map-settings.php:491
-#: frontend/class-frontend.php:1659 inc/wpsl-functions.php:135
+#: frontend/class-frontend.php:1673 inc/wpsl-functions.php:135
 msgid "No results found"
 msgstr ""
 
@@ -2041,7 +2048,7 @@ msgstr ""
 msgid "Searching (preloader text)"
 msgstr ""
 
-#: admin/templates/map-settings.php:499 frontend/class-frontend.php:1658
+#: admin/templates/map-settings.php:499 frontend/class-frontend.php:1672
 #: inc/wpsl-functions.php:133
 msgid "Searching..."
 msgstr ""
@@ -2057,7 +2064,7 @@ msgstr ""
 msgid "Category filter"
 msgstr ""
 
-#: admin/templates/map-settings.php:507 frontend/class-frontend.php:1295
+#: admin/templates/map-settings.php:507 frontend/class-frontend.php:1297
 msgid "Category"
 msgstr ""
 
@@ -2066,26 +2073,26 @@ msgid "Category first item"
 msgstr ""
 
 #: admin/templates/map-settings.php:511 admin/upgrade.php:367
-#: frontend/class-frontend.php:1298 inc/wpsl-functions.php:151
+#: frontend/class-frontend.php:1300 inc/wpsl-functions.php:151
 msgid "Any"
 msgstr ""
 
 #: admin/templates/map-settings.php:514 admin/templates/map-settings.php:515
-#: admin/upgrade.php:59 frontend/class-frontend.php:1660
+#: admin/upgrade.php:59 frontend/class-frontend.php:1674
 #: frontend/underscore-functions.php:138 frontend/underscore-functions.php:168
 #: inc/wpsl-functions.php:137
 msgid "More info"
 msgstr ""
 
 #: admin/templates/map-settings.php:518 admin/templates/map-settings.php:519
-#: frontend/class-frontend.php:787 frontend/underscore-functions.php:29
+#: frontend/class-frontend.php:789 frontend/underscore-functions.php:29
 #: frontend/underscore-functions.php:65 frontend/underscore-functions.php:147
 #: inc/wpsl-functions.php:145
 msgid "Phone"
 msgstr ""
 
 #: admin/templates/map-settings.php:538 admin/templates/map-settings.php:539
-#: frontend/class-frontend.php:1665 inc/wpsl-functions.php:130
+#: frontend/class-frontend.php:1679 inc/wpsl-functions.php:130
 msgid "Start location"
 msgstr ""
 
@@ -2093,7 +2100,7 @@ msgstr ""
 msgid "Get directions"
 msgstr ""
 
-#: admin/templates/map-settings.php:543 frontend/class-frontend.php:1663
+#: admin/templates/map-settings.php:543 frontend/class-frontend.php:1677
 #: inc/wpsl-functions.php:138
 msgid "Directions"
 msgstr ""
@@ -2103,24 +2110,24 @@ msgid "No directions found"
 msgstr ""
 
 #: admin/templates/map-settings.php:547 admin/upgrade.php:151
-#: frontend/class-frontend.php:1664 inc/wpsl-functions.php:139
+#: frontend/class-frontend.php:1678 inc/wpsl-functions.php:139
 msgid "No route could be found between the origin and destination"
 msgstr ""
 
 #: admin/templates/map-settings.php:550 admin/templates/map-settings.php:551
-#: admin/upgrade.php:77 frontend/class-frontend.php:1666
+#: admin/upgrade.php:77 frontend/class-frontend.php:1680
 #: inc/wpsl-functions.php:140
 msgid "Back"
 msgstr ""
 
 #: admin/templates/map-settings.php:554 admin/templates/map-settings.php:555
-#: admin/upgrade.php:143 frontend/class-frontend.php:1667
+#: admin/upgrade.php:143 frontend/class-frontend.php:1681
 #: inc/wpsl-functions.php:141
 msgid "Street view"
 msgstr ""
 
 #: admin/templates/map-settings.php:558 admin/templates/map-settings.php:559
-#: admin/upgrade.php:147 frontend/class-frontend.php:1668
+#: admin/upgrade.php:147 frontend/class-frontend.php:1682
 #: inc/wpsl-functions.php:142
 msgid "Zoom here"
 msgstr ""
@@ -2129,7 +2136,7 @@ msgstr ""
 msgid "General error"
 msgstr ""
 
-#: admin/templates/map-settings.php:563 frontend/class-frontend.php:1661
+#: admin/templates/map-settings.php:563 frontend/class-frontend.php:1675
 #: inc/wpsl-functions.php:143
 msgid "Something went wrong, please try again!"
 msgstr ""
@@ -2145,7 +2152,7 @@ msgid ""
 "the \"API key\" field at the top of this page."
 msgstr ""
 
-#: admin/templates/map-settings.php:567 frontend/class-frontend.php:1662
+#: admin/templates/map-settings.php:567 frontend/class-frontend.php:1676
 #: inc/wpsl-functions.php:144
 msgid "API usage limit reached"
 msgstr ""
@@ -2166,9 +2173,7 @@ msgid ""
 msgstr ""
 
 #: admin/templates/map-settings.php:587
-msgid ""
-"Prevent other scripts from including the Google Maps API a second time on "
-"the store locator page?"
+msgid "Enable compatibility mode?"
 msgstr ""
 
 #: admin/templates/map-settings.php:587
@@ -2237,37 +2242,37 @@ msgid ""
 "view them on the %sAll Stores%s page."
 msgstr ""
 
-#: frontend/class-frontend.php:724
+#: frontend/class-frontend.php:726
 msgid ""
 "If you use the [wpsl_address] shortcode outside a store page you need to set "
 "the ID attribute."
 msgstr ""
 
-#: frontend/class-frontend.php:838
+#: frontend/class-frontend.php:840
 msgid ""
 "If you use the [wpsl_hours] shortcode outside a store page you need to set "
 "the ID attribute."
 msgstr ""
 
-#: frontend/class-frontend.php:886
+#: frontend/class-frontend.php:888
 msgid ""
 "If you use the [wpsl_map] shortcode outside a store page, then you need to "
 "set the ID or category attribute."
 msgstr ""
 
-#: frontend/class-frontend.php:1459
+#: frontend/class-frontend.php:1473
 msgid "The application does not have permission to use the Geolocation API."
 msgstr ""
 
-#: frontend/class-frontend.php:1460
+#: frontend/class-frontend.php:1474
 msgid "Location information is unavailable."
 msgstr ""
 
-#: frontend/class-frontend.php:1461
+#: frontend/class-frontend.php:1475
 msgid "The geolocation request timed out."
 msgstr ""
 
-#: frontend/class-frontend.php:1462
+#: frontend/class-frontend.php:1476
 msgid "An unknown error occurred."
 msgstr ""
 
@@ -2277,103 +2282,91 @@ msgstr ""
 msgid "Search provided by %sWP Store Locator%s"
 msgstr ""
 
-#: inc/class-post-types.php:50
-msgid "Store"
-msgstr ""
-
-#: inc/class-post-types.php:51
-msgid "Stores"
-msgstr ""
-
-#: inc/class-post-types.php:55
+#: inc/class-post-types.php:52
 msgid "Store Locator"
 msgstr ""
 
-#: inc/class-post-types.php:56
-#, php-format
-msgid "All %s"
+#: inc/class-post-types.php:53
+msgid "All Stores"
 msgstr ""
 
-#: inc/class-post-types.php:58 inc/class-post-types.php:61
-#, php-format
-msgid "New %s"
+#: inc/class-post-types.php:54
+msgid "Store"
+msgstr ""
+
+#: inc/class-post-types.php:55 inc/class-post-types.php:58
+msgid "New Store"
+msgstr ""
+
+#: inc/class-post-types.php:56
+msgid "Add New Store"
+msgstr ""
+
+#: inc/class-post-types.php:57
+msgid "Edit Store"
 msgstr ""
 
 #: inc/class-post-types.php:59
-#, php-format
-msgid "Add New %s"
+msgid "View Stores"
 msgstr ""
 
 #: inc/class-post-types.php:60
-#, php-format
-msgid "Edit %s"
+msgid "Search Stores"
+msgstr ""
+
+#: inc/class-post-types.php:61
+msgid "No Stores found"
 msgstr ""
 
 #: inc/class-post-types.php:62
-#, php-format
-msgid "View %s"
+msgid "No Stores found in trash"
 msgstr ""
 
-#: inc/class-post-types.php:63
-#, php-format
-msgid "Search %s"
-msgstr ""
-
-#: inc/class-post-types.php:64
-#, php-format
-msgid "No %s found"
-msgstr ""
-
-#: inc/class-post-types.php:65
-#, php-format
-msgid "No %s found in trash"
-msgstr ""
-
-#: inc/class-post-types.php:107 inc/class-post-types.php:117
+#: inc/class-post-types.php:104 inc/class-post-types.php:114
 msgid "Store Categories"
 msgstr ""
 
-#: inc/class-post-types.php:108
+#: inc/class-post-types.php:105
 msgid "Store Category"
 msgstr ""
 
-#: inc/class-post-types.php:109
+#: inc/class-post-types.php:106
 msgid "Search Store Categories"
 msgstr ""
 
-#: inc/class-post-types.php:110
+#: inc/class-post-types.php:107
 msgid "All Store Categories"
 msgstr ""
 
-#: inc/class-post-types.php:111
+#: inc/class-post-types.php:108
 msgid "Parent Store Category"
 msgstr ""
 
-#: inc/class-post-types.php:112
+#: inc/class-post-types.php:109
 msgid "Parent Store Category:"
 msgstr ""
 
-#: inc/class-post-types.php:113
+#: inc/class-post-types.php:110
 msgid "Edit Store Category"
 msgstr ""
 
-#: inc/class-post-types.php:114
+#: inc/class-post-types.php:111
 msgid "Update Store Category"
 msgstr ""
 
-#: inc/class-post-types.php:115
+#: inc/class-post-types.php:112
 msgid "Add New Store Category"
 msgstr ""
 
-#: inc/class-post-types.php:116
+#: inc/class-post-types.php:113
 msgid "New Store Category Name"
 msgstr ""
 
-#: inc/class-post-types.php:147
+#: inc/class-post-types.php:144
 msgid "Enter store title here"
 msgstr ""
 
-#: inc/class-post-types.php:165
+#: inc/class-post-types.php:162
 msgid "Zip"
 msgstr ""
 

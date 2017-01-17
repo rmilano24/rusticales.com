@@ -264,6 +264,8 @@ if ( !class_exists( 'WPSL_Frontend' ) ) {
 
             if ( $stores ) {
                 $store_data = apply_filters( 'wpsl_store_data', $this->get_store_meta_data( $stores ) );
+            } else {
+                $store_data = apply_filters( 'wpsl_no_results_sql', '' );
             }
 
             return $store_data;
@@ -1380,9 +1382,9 @@ if ( !class_exists( 'WPSL_Frontend' ) ) {
             // Strip out the default values that are wrapped in [].
             foreach ( $required_defaults as $required_default ) {
                 preg_match_all( '/\[([0-9]+?)\]/', $wpsl_settings[$required_default], $match, PREG_PATTERN_ORDER );
-                $output[$required_default] = $match[1][0];
+                $output[$required_default] = ( isset( $match[1][0] ) ) ? $match[1][0] : '25';
             }
-            
+
             return $output;
         }
         
@@ -1736,7 +1738,6 @@ if ( !class_exists( 'WPSL_Frontend' ) ) {
 
             return $settings;
         }
-
     }
 
     new WPSL_Frontend();
