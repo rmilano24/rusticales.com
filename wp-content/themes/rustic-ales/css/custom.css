@@ -810,7 +810,7 @@ background-size:80%;
 		display:block;
 		background-color:#372A29;
 		position:relative;
-		padding:20px 0;
+		padding:20px 0 8px;
 	}
 	#mobile-header .col-md-6 {
 		float:left;
