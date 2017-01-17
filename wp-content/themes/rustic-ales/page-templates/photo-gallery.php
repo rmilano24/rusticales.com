@@ -23,7 +23,7 @@ get_header(); ?>
               while( $gallery_items ->have_posts() ) {
                 $gallery_items->the_post();
                 ?>
-                 <div class="col-md-4 gallery-item">
+                 <div class="gallery-item">
                   <?php $image = get_field('gallery_item_image');
                 if( !empty($image) ): ?>
                     <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /> 
