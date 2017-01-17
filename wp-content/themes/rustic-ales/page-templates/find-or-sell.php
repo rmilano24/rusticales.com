@@ -19,6 +19,7 @@
 	</div>
       
       <div id="store-locator">
+      <h2 class="sub-title yellow">Find Our Beer</h2>
       <?php echo do_shortcode('[wpsl]'); ?>
       </div>
 

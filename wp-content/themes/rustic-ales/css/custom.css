@@ -134,6 +134,7 @@ img {
 }
 .learn-more-right-row {
 	text-align:right;
+	padding-top:30px;
 }
 
 .view-more-link {
@@ -193,10 +194,10 @@ img {
 	display:inline-block;
 	margin-bottom:36px;
 }
+
 /* Navigation */
 #main-nav ul {
 	list-style-type:none;
-	
 	margin:0 auto;
 	padding:0 20px 20px;
 }
@@ -228,12 +229,10 @@ img {
 	padding-bottom:9px;
 	background-size:76px;
 }
-
 #main-nav ul li.current_page_parent > a {
 	background:url('../../../../images/drawn-underline.png') no-repeat center bottom;
 	background-size:76px;
 }
-
 #main-nav ul li a:hover {
 	text-decoration:none;
 }
@@ -289,7 +288,6 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 	background:#1C1313 url('../../../../images/top-of-footer-bg.png') repeat-x left -7px;
 	color:#FCFCFC;
 	background-size:1000px;
-
 }
 #main-footer .sub-title {
 	background:none;
@@ -445,7 +443,6 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
     -webkit-transition: all 2s; /* Safari */
     transition: all 2s;
 }
-
 #hover-locations .sub-title-row {
 	position:relative;
 }
@@ -455,7 +452,6 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 	left:0;
 	top:0;
 }
-
 #hover-locations #hover-locations-row {
 	padding-top:40px;
 }
@@ -629,12 +625,22 @@ background-size:80%;
 #find-our-beer .post-content p {
 	font-size:20px;
 }
+#find-our-beer #store-locator {
+	position:relative;
+}
+#find-our-beer #store-locator .sub-title {
+	position:absolute;
+	top:-30px;
+	left:0;
+	z-index:9999;
+}
 #wpsl-result-list {
 	display:none !important;
 }
-#find-our-beer #wpsl-search-wrap, #find-our-beer .wpsl-geolocation-run{
+#find-our-beer #wpsl-search-wrap, #find-our-beer .wpsl-geolocation-run, #find-our-beer .wpsl-search{
 	max-height:0 !important;
 	display:none;
+	overflow:hidden;
 }
 #find-our-beer .gm-style-iw:parent {
 	background-color: #FFECBA;
@@ -805,6 +811,12 @@ background-size:80%;
 		text-align:center;
 	}
 
+	#beer-and-labels-the-content .container .post-content, 
+	#location-detail-content .container .post-content {
+		padding-left:5px;
+		padding-right:5px;
+	}
+
 	/* Header */
 	#mobile-header {
 		display:block;
@@ -847,6 +859,7 @@ background-size:80%;
 		width:100%;
 		bottom:-235px;
 	}
+
 	#main-header-bg {
 		top:92px;
 	}
@@ -889,6 +902,10 @@ background-size:80%;
 	}
 
 @media screen and (max-width:768px) {
+	/* General */
+	#banner-heading-text br {
+		display:none;
+	}
 
 	/* Locations Row */
 	#hover-locations-row .col-md-6 {
