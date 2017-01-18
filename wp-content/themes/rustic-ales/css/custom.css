@@ -879,8 +879,19 @@ background-size:80%;
 	#view-all-photos-row {
 		padding-top:30px;
 	}
-	.gallery-item {
+	.gallery-item, .instagram-item {
 		width:50%;
+	}
+
+	.instagram-item {
+		float:left;
+	}
+
+	#instagram-feed .instagram-item:nth-child(n+3) {
+		margin-top:30px;
+	}
+	#instagram-feed .instagram-item:nth-child(n+9) {
+		display:none;
 	}
 
 	/* Homepage */
@@ -982,6 +993,27 @@ background-size:80%;
 	#beer-and-labels-below-the-content .container {
 		padding-top:30px;
 		padding-bottom:30px;
+	}
+
+	/* Gallery */
+	#gallery-loop {
+		margin-left:0;
+		margin-right:0;
+	}
+	#instagram-feed .container {
+		padding-left:20px;
+		padding-right:20px;
+	}
+	.instagram-item, .gallery-item  {
+		width:100%;
+		float:none;
+	}
+	.instagram-item:nth-child(n+2) {
+		margin-top:30px;
+	}
+
+	.instagram-item:nth-child(n+4) {
+		display:none;
 	}
 
 
