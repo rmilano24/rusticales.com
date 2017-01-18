@@ -903,6 +903,11 @@ background-size:80%;
 
 @media screen and (max-width:768px) {
 	/* General */
+	#banner-heading-text {
+		font-size:30px;
+		line-height:44px;
+		padding-right:20px;
+	}
 	#banner-heading-text br {
 		display:none;
 	}
