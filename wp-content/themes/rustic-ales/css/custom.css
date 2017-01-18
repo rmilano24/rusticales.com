@@ -995,6 +995,11 @@ background-size:80%;
 		padding-bottom:30px;
 	}
 
+	/* Beer Detail */
+	.single-the_beers #main-header-bg {
+		background-image:none !important;
+	}
+
 	/* Gallery */
 	#gallery-loop {
 		margin-left:0;
