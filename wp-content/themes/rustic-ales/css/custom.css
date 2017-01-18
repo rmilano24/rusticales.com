@@ -582,6 +582,10 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 	text-align:center;
 }
 
+.beer-category-group + .beer-category-group .sub-title {
+	margin-top:30px;
+}
+
 #the_beer_filters {
 	text-align:center;
 }
@@ -863,6 +867,13 @@ background-size:80%;
 	#main-header-bg {
 		top:92px;
 	}
+
+	/* Beer and Labels */
+	#beer-categories-filters .sub-title.yellow {
+		position:static;
+		margin-bottom:20px;
+	}
+	
 	
 	/* Gallery Items */
 	#view-all-photos-row {
@@ -900,16 +911,39 @@ background-size:80%;
 		top:-28px;
 	}
 	}
-
-@media screen and (max-width:768px) {
+@media screen and (min-width:768px) {
+	#page-top-banner-wrapper {
+		background-image:none !important;
+	}
+}
+@media screen and (max-width:767px) {
 	/* General */
+	.center-mobile {
+		text-align:center;
+	}
+	#main-header-bg {
+		height:auto;
+	}
 	#banner-heading-text {
 		font-size:30px;
 		line-height:44px;
 		padding-right:20px;
+		padding-top:0;
 	}
 	#banner-heading-text br {
 		display:none;
+	}
+	#page-top-banner-wrapper {
+		height:329px;
+		width:100%;
+		display:table;
+	}
+	#banner-heading-text {
+		position:static;
+		display:table-cell;
+		height:100%;
+		vertical-align:middle;
+		width:100%;
 	}
 
 	/* Locations Row */
@@ -920,7 +954,6 @@ background-size:80%;
 		margin-left:auto;
 		margin-right:auto;
 	}
-
 	#hover-locations-row .col-md-6.taproom-location {
 		margin-top:30px;
 	}
@@ -930,4 +963,26 @@ background-size:80%;
 		width:600px;
 		max-width:100%;
 	}
+
+	/* Beers and Labels */
+	#the_beer_filters li {
+		display:block;
+		margin-left:0;
+	}
+	#the_beer_filters li + li:before {
+		display:none;
+	}
+	#the_beer_filters li.active {
+		background-size:130px;
+	}
+	.one-fifth-column.beer-item {
+		width:50%;
+	}
+
+	#beer-and-labels-below-the-content .container {
+		padding-top:30px;
+		padding-bottom:30px;
+	}
+
+
 }

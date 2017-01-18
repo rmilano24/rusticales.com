@@ -73,7 +73,7 @@
         </div>
       </div>
     </div>
-    <div class="container" id="page-top-banner-wrapper">
+    <div class="container" id="page-top-banner-wrapper" style="background:url('<?php the_field("top_banner_image") ?>') no-repeat center top; background-size:cover">
       <div id="header-logo-menu">
         <div id="logo-container">
           <a href="/">
