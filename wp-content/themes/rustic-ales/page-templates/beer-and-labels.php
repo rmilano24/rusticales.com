@@ -50,6 +50,7 @@ unset($beer_cat);
 </div>
 		 <ul id="the_beer_filters" class="list-inline col-md-10 col-md-offset-1">
 			<?php foreach ($show_these_categories as $cat_value) { ?>
+				<li class="active"><a id="beer-cat-filter-all" >All Beers</a></li>
 				<li>
 					<a id="beer-cat-filter-<?php echo $cat_value ?>">
 						<?php echo get_cat_name($cat_value); ?>
@@ -57,7 +58,7 @@ unset($beer_cat);
 				</li>
 			<?php } ?>
 				<li><a href="/saras-cellar" >SARA's Cellar</a></li>
-				<li class="active"><a id="beer-cat-filter-all" >All Beers</a></li>
+				
 		</ul>
 		<div class="cleaner"></div>
  </div>
