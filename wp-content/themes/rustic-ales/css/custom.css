@@ -788,7 +788,12 @@ background-size:80%;
 	/* Header */
 	#banner-heading-text {
 		font-size:68px;
+	}
 
+	/* Beer and Labels */
+	#beer-categories-filters .sub-title.yellow {
+		position:static;
+		margin-bottom:20px;
 	}
 }
 
@@ -868,11 +873,7 @@ background-size:80%;
 		top:92px;
 	}
 
-	/* Beer and Labels */
-	#beer-categories-filters .sub-title.yellow {
-		position:static;
-		margin-bottom:20px;
-	}
+	
 	
 	
 	/* Gallery Items */
@@ -1020,6 +1021,10 @@ background-size:80%;
 	.instagram-item:nth-child(n+4) {
 		display:none;
 	}
+}
 
-
+@media screen and (max-width:550px) {
+	#homepage-on-tap #instafeed {
+		padding:20px;
+	}
 }

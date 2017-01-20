@@ -56,6 +56,7 @@ unset($beer_cat);
 					</a>
 				</li>
 			<?php } ?>
+				<li><a href="/saras-cellar" >SARA's Cellar</a></li>
 				<li class="active"><a id="beer-cat-filter-all" >All Beers</a></li>
 		</ul>
 		<div class="cleaner"></div>
