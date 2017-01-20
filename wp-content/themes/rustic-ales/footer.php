@@ -171,12 +171,34 @@
     </script>
     <?php if ( is_front_page() || is_page_template( 'page-templates/photo-gallery.php' )) { ?>
     <script type="text/javascript">
+    var foundImages = 0;
+    var maxImages = 8;
+
     var userFeed = new Instafeed({
         get: 'user',
         userId: 1385476119,
         accessToken: '1385476119.5cac516.de6240d874374be8bbbb8928cbbd798d',
         target: 'instafeed',
-         <?php if ( is_front_page()) { ?>limit: 1,<?php } else { ?>limit: 9,<?php } ?>
+        <?php if ( is_front_page()) { ?>
+        filter: function(image) {
+          return image.tags.indexOf('beers') >= 0;
+        },
+        <?php } else { ?>
+        success: function() {
+          foundImages = 0;
+        },
+        filter: function(image) {
+          if (image.tags.indexOf('beers') >= 0 || foundImages > maxImages) {
+            return false;
+            alert(maxImages);
+          } else {
+             foundImages = foundImages + 1;
+          }
+
+          return true;
+        },
+        <?php } ?>
+        <?php if ( is_front_page()) { ?>limit: 1,<?php } else { ?>limit: 60,<?php } ?>
         template: <?php if ( is_front_page()) { ?>'<img src="{{image}}" alt="What is on tap" />'<?php } else { ?>'<div class="instagram-item col-md-4"><img src="{{image}}" alt="{{caption}}" /></div>'<?php } ?>,
         resolution: 'standard_resolution',
         after: function() {
