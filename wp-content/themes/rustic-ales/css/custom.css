@@ -126,6 +126,7 @@ img {
 }
 .drawn-underline {
 	padding-bottom:14px;
+	text-decoration:none;
 }
 .drawn-underline:hover {
 	background: url('../../../../images/drawn-underline.png') no-repeat center bottom;
