@@ -59,7 +59,7 @@ get_header(); ?>
 		<div class="extra-content">
 			<?php the_field('additional_text_below_larger_intro_text'); ?>
 		</div>
-		<?php echo do_shortcode('[contact-form-7 id="230" title="Contact form 1"]'); ?>
+		<?php echo do_shortcode('[contact-form-7 id="239" title="Contact form 1"]'); ?>
 		</div>
 	</div>
 
