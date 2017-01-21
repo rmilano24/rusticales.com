@@ -767,7 +767,29 @@ background-size:80%;
 }
 
 /* Contact */
+#contact-form-row .extra-content {
+	padding-top:30px;
+	padding-bottom:30px;
+}
 
+#contact-form-row .asterisk {
+	color: #cb2626;
+}
+#contact-form-row label {
+	font-size:16px;
+	font-weight:400;
+}
+#contact-form-row .wpcf7-form label, #contact-form-row .wpcf7-form-control-wrap {
+	width:100%;
+	display:block;
+}
+#contact-form-row .wpcf7-form input[type="text"],
+#contact-form-row .wpcf7-form input[type="email"],
+#contact-form-row .wpcf7-form select {
+	width:100%;
+	border-radius:0;
+	margin-top:8px;
+}
 
 @media screen and (min-width:1630px) {
 	.large-container {

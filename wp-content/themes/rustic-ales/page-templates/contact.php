@@ -53,9 +53,13 @@ get_header(); ?>
 		</div>
 		<div class="cleaner"></div>
 	</div>
-	<div class="container clearfix" id="contact-form-row">
+	<div class="container y-paddings clearfix" id="contact-form-row">
 		<div class="col-md-8 col-md-offset-2 narrowed-container">
-
+		<h2 class="sub-title dark">Contact Us</h2>
+		<div class="extra-content">
+			<?php the_field('additional_text_below_larger_intro_text'); ?>
+		</div>
+		<?php echo do_shortcode('[contact-form-7 id="230" title="Contact form 1"]'); ?>
 		</div>
 	</div>
 
