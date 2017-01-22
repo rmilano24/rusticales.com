@@ -106,9 +106,6 @@
             $(this).children('ul').hide();
         });
 
-        // Directional Hover Effects
-       // $(' .beer-item ').each( function() { $(this).hoverdir(); } );
-
         // Animated hamburger menu - toggle class
         $('.hamburger').click(function(){
           $(this).toggleClass('is-active');
@@ -159,6 +156,8 @@
           locationInfobox();
           //setTimeout(locationInfobox, 100);
         });
+
+        $('#contact-form-row select option[value=""]').text('');
 
 
       });

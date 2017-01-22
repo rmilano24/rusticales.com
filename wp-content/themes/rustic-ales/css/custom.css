@@ -779,6 +779,7 @@ background-size:80%;
 #contact-form-row label {
 	font-size:16px;
 	font-weight:400;
+	margin-bottom:50px;
 }
 #contact-form-row .wpcf7-form label, #contact-form-row .wpcf7-form-control-wrap {
 	width:100%;
@@ -790,6 +791,40 @@ background-size:80%;
 	width:100%;
 	border-radius:0;
 	margin-top:8px;
+	height:55px;
+	border:1px solid #DADADA;
+}
+.wpcf7-form select {
+	-moz-appearance: none;
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0 !important;
+    margin-top: 0;
+    outline: medium none !important;
+}
+.wpcf7-form span.your-subject {
+	background: #FFF url("../../../../images/dropdown-arrow.png") no-repeat scroll 97% center;
+	background-size:auto 16px;
+    border-radius: 0 !important;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.wpcf7-form textarea {
+	border-radius:0;
+	resize:none;
+	height:136px;
+}
+
+.wpcf7-form input[type="submit"] {
+	background:transparent;
+	border:1px solid #000;
+	border-radius:0;
+	height:47px;
+	line-height:47px;
+	padding:0 40px;
 }
 
 @media screen and (min-width:1630px) {
