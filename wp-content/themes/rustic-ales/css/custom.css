@@ -856,6 +856,8 @@ background-size:80%;
 }
 
 @media screen and (min-width:992px) {
+	/* General */
+	.show-tablet {display:none !important;}
 	/* Header */
 	#mobile-header {
 		display:none;
@@ -983,6 +985,31 @@ background-size:80%;
 	}
 	#homepage-photos .sub-title-row {
 		top:-28px;
+	}
+
+	/* Beer Detail */
+	#beer-single-content .show-tablet.header-wrapper {
+		margin-top:5px;
+		z-index:9px;
+		position:relative;
+		text-align:center;
+	}
+	#beer-single-left {
+		padding-top:40px;
+	}
+	#beer-single-right h1.sub-title {
+		display:none;
+	}
+	#beer-specs li {
+		display:block;
+		padding-left:0;
+	}
+	#beer-specs li + li {
+		border-left:none;
+		padding-left:0;
+	}
+	#beer-single-description {
+		width:100%;
 	}
 
 	/* Our Story */
@@ -1121,28 +1148,11 @@ background-size:80%;
 	.single-the_beers #main-header-bg {
 		background-image:none !important;
 	}
-	#beer-single-content .mobile-only.header-wrapper {
+	#beer-single-content .show-tablet.header-wrapper {
 		margin-top:-70px;
-		z-index:9px;
-		position:relative;
-		text-align:center;
-	}
-	#beer-single-left {
-		padding-top:40px;
-	}
-	#beer-single-right h1.sub-title {
-		display:none;
-	}
-	#beer-specs li {
-		display:block;
-		padding-left:0;
-	}
-	#beer-specs li + li {
-		border-left:none;
-		padding-left:0;
 	}
 	#beer-single-description {
-		width:100%;
+		display:none;
 	}
 
 	/* Our Story */

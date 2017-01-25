@@ -13,7 +13,7 @@
 	<div id="beer-details-row">
 	<div class="container y-paddings" id="beer-single-content">
       <div class="row">
-      	<div class="mobile-only header-wrapper">
+      	<div class="show-tablet show-mobile header-wrapper">
       		<h1 class="sub-title yellow"><?php the_title(); ?></h1>
       	</div>
 	      <div class="col-md-3" id="beer-single-left">
