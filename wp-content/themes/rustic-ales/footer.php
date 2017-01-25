@@ -205,12 +205,13 @@
         },
     });
     userFeed.run();
-
+    if (jQuery(window).width() > 767) {
     jQuery('#gallery-loop').masonry({
       // options
       itemSelector: '.gallery-item',
       transitionDuration: '0.8s'
     });
+  }
 
 </script>
 <?php } ?>
