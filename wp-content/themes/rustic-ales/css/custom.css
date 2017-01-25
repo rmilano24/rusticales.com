@@ -353,7 +353,7 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 	position:fixed;
 	width:100%;
 	height:100%;
-	z-index:999999999;
+	z-index:9999999999;
 	background:#FFECBA url('../../../../images/large-overhead-map.jpg') no-repeat center center;
 	background-size:cover;
 	top:0;
@@ -1014,6 +1014,20 @@ background-size:80%;
 		height:100%;
 		vertical-align:middle;
 		width:100%;
+	}
+
+	/* Age Verification */
+	#age-verification-logo {
+		max-width:90%;
+	}
+	#age-verification #close-verification {
+		display:block;
+		margin:0 auto;
+		margin-bottom:30px;
+	}
+	#age-verification h2 {
+		font-size:48px;
+		margin:46px 0 34px;
 	}
 
 	/* Locations Row */
