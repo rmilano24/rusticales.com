@@ -34,6 +34,7 @@
 					<a href="<?php the_field('bottom_link_url'); ?>" class="drawn-underline view-more-link"><?php the_field('bottom_link_text'); ?></a>
 				</div>
 			</div>
+			<div class="cleaner"></div>
 		</div>
 	</div>
 	

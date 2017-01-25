@@ -879,10 +879,16 @@ background-size:80%;
 	}
 
 	#beer-and-labels-the-content .container .post-content, 
-	#location-detail-content .container .post-content {
+	#location-detail-content .container .post-content,
+	#find-our-beer .post-content, 
+	#saras-cellar .post-content, 
+	#our-story .post-content, 
+	.header-aligned.post-content, 
+	.narrowed-container {
 		padding-left:5px;
 		padding-right:5px;
 	}
+
 
 	/* Header */
 	#mobile-header {
@@ -931,9 +937,7 @@ background-size:80%;
 		top:92px;
 	}
 
-	
-	
-	
+
 	/* Gallery Items */
 	#view-all-photos-row {
 		padding-top:30px;
@@ -979,6 +983,15 @@ background-size:80%;
 	}
 	#homepage-photos .sub-title-row {
 		top:-28px;
+	}
+
+	/* Our Story */
+	#our-story-content-row .left-col {
+		padding-left:5px;
+	}
+	#our-story-content-row .right-col {
+		padding-right:5px;
+		width:60%;
 	}
 	}
 @media screen and (min-width:768px) {
@@ -1096,6 +1109,21 @@ background-size:80%;
 		padding-left:0;
 	}
 	#beer-single-description {
+		width:100%;
+	}
+
+	/* Our Story */
+	#our-story-content-row .left-col,
+	#our-story-content-row .right-col {
+		float:none;
+	}
+	#our-story-content-row .left-col {
+		text-align:center;
+		width:80%;
+		margin:0 auto 30px;
+	}
+
+	#our-story-content-row .right-col {
 		width:100%;
 	}
 
