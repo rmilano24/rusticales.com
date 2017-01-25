@@ -993,6 +993,12 @@ background-size:80%;
 		padding-right:5px;
 		width:60%;
 	}
+
+	/* Find or Sell */
+	#saras-cellar-row .right-col {
+		padding-top:30px;
+	}
+	
 	}
 @media screen and (min-width:768px) {
 	.mobile-only {
@@ -1045,6 +1051,33 @@ background-size:80%;
 		font-size:48px;
 		margin:46px 0 34px;
 	}
+
+	/* Gallery */
+	.instagram-item, .gallery-item {
+		position: static !important;
+	}
+
+	/* Find or Sell */
+	#find-our-beer #store-locator {
+		text-align:center;
+	}
+	#find-our-beer #store-locator .sub-title {
+		right:0;
+		margin:auto;
+	}
+	#saras-cellar-row {
+		padding-top:20px;
+	}
+	#saras-cellar-row .sub-title-row {
+		top:-48px;
+	}
+
+	#saras-cellar-row .left-col,
+	#saras-cellar-row .right-col {
+		padding-left:5px;
+		padding-right:5px;
+	}
+
 
 	/* Locations Row */
 	#hover-locations-row .col-md-6 {
