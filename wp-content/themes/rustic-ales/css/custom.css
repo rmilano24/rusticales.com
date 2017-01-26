@@ -526,6 +526,9 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 	display:block;
 	margin:0 auto;
 }
+#homepage-on-tap #instafeed img + img {
+	display:none !important;
+}
 
 #homepage-photos #homepage-photos-loop {
 	margin-left:-6px;
@@ -628,8 +631,8 @@ button.hamburger.is-active .hamburger-box .hamburger-inner {
 background:url('../../../../images/active-filter-underline.png') no-repeat center bottom;
 background-size:80%;
 }
-/* Find Our Beers */
 
+/* Find Our Beers */
 #find-our-beer .post-content p {
 	font-size:20px;
 }
@@ -869,12 +872,29 @@ background-size:80%;
 	
 
 	/* Homepage */
-	#hover-locations .hover-location .interior:hover img.map-image {
+	#hover-locations .hover-location .interior:hover img.map-image, 
+	#other-locations .hover-location .interior:hover img {
 	min-width:150%;
 	-ms-transform: rotate(-15deg); /* IE 9 */
     -webkit-transform: rotate(-15deg); /* Safari */
     transform: rotate(-15deg);
 }
+	#other-locations .hover-location .interior img {
+	position:absolute;
+	top:-9999999px;
+	left:-9999999px;
+	bottom:-9999999px;
+	right:-9999999px;
+	min-width:100%;
+	height:auto;
+	margin:auto;
+	z-index:-1;
+    -webkit-transition: all 2s; /* Safari */
+    transition: all 2s;
+	}
+	#hover-locations .hover-location .interior {
+		height:220px;
+	}
 }
 
 @media screen and (max-width:991px) {

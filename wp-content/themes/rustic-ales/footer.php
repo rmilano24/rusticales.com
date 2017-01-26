@@ -197,7 +197,7 @@
           return true;
         },
         <?php } ?>
-        <?php if ( is_front_page()) { ?>limit: 1,<?php } else { ?>limit: 60,<?php } ?>
+        <?php if ( is_front_page()) { ?>limit: 4,<?php } else { ?>limit: 60,<?php } ?>
         template: <?php if ( is_front_page()) { ?>'<img src="{{image}}" alt="What is on tap" />'<?php } else { ?>'<div class="instagram-item col-md-4"><img src="{{image}}" alt="{{caption}}" /></div>'<?php } ?>,
         resolution: 'standard_resolution',
         after: function() {
