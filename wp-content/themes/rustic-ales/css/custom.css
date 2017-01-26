@@ -137,6 +137,9 @@ img {
 	text-align:right;
 	padding-top:30px;
 }
+.row .learn-more-right-row {
+	padding-right:15px;
+}
 
 .view-more-link {
 	font-size: 18px;
