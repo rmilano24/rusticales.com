@@ -1025,6 +1025,17 @@ background-size:80%;
 	#saras-cellar-row .right-col {
 		padding-top:30px;
 	}
+
+	/* SARAs Cellar */
+	#saras-cellar .post-content.sub-content {
+		width:70%;
+		float:left;
+	}
+	#saras-cellar #saras-cellar-logo {
+		width:30%;
+		padding-left:10px;
+		float:right;
+	}
 	
 	}
 @media screen and (min-width:768px) {
@@ -1049,6 +1060,9 @@ background-size:80%;
 		padding-right:20px;
 		padding-top:0;
 	}
+	#banner-heading-text .child-page-header + br {
+		display:block;
+	}
 	#banner-heading-text br {
 		display:none;
 	}
@@ -1063,6 +1077,7 @@ background-size:80%;
 		height:100%;
 		vertical-align:middle;
 		width:100%;
+		padding-left:0;
 	}
 
 	/* Age Verification */
@@ -1105,6 +1120,20 @@ background-size:80%;
 		padding-right:5px;
 	}
 
+	/* SARAs Cellar */
+	#saras-cellar .post-content.sub-content,
+	#saras-cellar #saras-cellar-logo {
+		width:100%;
+		float:none;
+	}
+	#saras-cellar .post-content.sub-content {
+		padding-bottom:0;
+	}
+	#saras-cellar #saras-cellar-logo  {
+		padding-bottom:30px;
+		padding-top:30px;
+		text-align:center;
+	}
 
 	/* Locations Row */
 	#hover-locations-row .col-md-6 {
