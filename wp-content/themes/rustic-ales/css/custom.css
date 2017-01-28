@@ -802,6 +802,7 @@ background-size:80%;
 	border:1px solid #DADADA;
 }
 .wpcf7-form select {
+    -webkit-appearance: none !important;
 	-moz-appearance: none;
     background: transparent none repeat scroll 0 0;
     border: 0 none;
@@ -1120,7 +1121,7 @@ background-size:80%;
 		margin-bottom:30px;
 	}
 	#age-verification h2 {
-		font-size:48px;
+		font-size:31px;
 		margin:46px 0 34px;
 	}
 
