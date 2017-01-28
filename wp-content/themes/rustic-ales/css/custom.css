@@ -917,6 +917,13 @@ background-size:80%;
 		padding-right:5px;
 	}
 
+	/* Age Verification */
+	#hover-locations .hover-location img.map-image {
+		min-height:100%;
+		min-width:none;
+		max-height:100%;
+	}
+
 
 	/* Header */
 	#mobile-header {
@@ -1124,6 +1131,7 @@ background-size:80%;
 		font-size:31px;
 		margin:46px 0 34px;
 	}
+
 
 	/* Gallery */
 	.instagram-item, .gallery-item {
