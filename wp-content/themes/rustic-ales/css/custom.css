@@ -1099,9 +1099,10 @@ background-size:80%;
 		padding-top:0;
 		color:#FFF;
 	}
-	#banner-heading-text .child-page-header + br {
-		display:block;
+	#banner-heading-text .child-page-header {
+		display:none;
 	}
+
 	#banner-heading-text br {
 		display:none;
 	}
