@@ -32,7 +32,7 @@
       				<ul class="list-inline">
       					<li><a href="https://www.facebook.com/rusticales/" target="_blank"><img src="/images/icons/facebook-footer.png" alt="Facebook"></a></li>
       					<li><a href="https://www.instagram.com/rusticales/" target="_blank"><img src="/images/icons/instagram-footer.png" alt="Facebook"></a></li>
-      					<li><a href="#"><img src="/images/icons/email-footer.png" alt="Facebook"></a></li>
+      					<li><a href="mailto:adair@rusticales.com"><img src="/images/icons/email-footer.png" alt="Facebook"></a></li>
       				</ul>
       			</div>
       		</div>
