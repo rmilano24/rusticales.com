@@ -126,7 +126,7 @@
 		 <?php 
 	        $args = array(
 	          'post_type' => 'photos',
-	          'posts_per_page' => 80
+	          'posts_per_page' => 7
 	        );
         $gallery_items = new WP_Query( $args );
         if( $gallery_items->have_posts() ) {
